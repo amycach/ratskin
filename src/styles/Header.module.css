@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+.header_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.nav_container {
+    width:100%;
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.nav_container > a {
+    border:none;
+    width: 13vw;
+    margin-bottom: 1rem;
+    padding:2vw 0 2vw 0;
+    font-family: "Irish Grover", system-ui;
+    font-size:1.5vw;
+    text-align:center;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.nav_container a.inactive {
+    color:#ff008c;
+}
+
+.nav_container a.active {
+  color:#ff008c;
+  text-shadow: 1px 1px 1px #00495c; 
+  text-decoration:underline;
+}
+
+.nav_container > a.inactive:hover {
+    color:#ef71b6;
+    cursor: pointer;
+}
+
+.nav_container > a.active:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+ 
+    .nav_container > a {
+        width:10rem;
+        padding:25px 0 10px 0;
+        font-size:1.2rem;
+    }
+      .nav_container > a.inactive:hover {
+        color:#A90B0B;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+
+    .icons_container {
+        right:1rem;
+    }
+
+    .nav_container {
+        width:70%;
+    }
+
+    .nav_container > a {
+        font-size:1rem;
+    }
+
+    .nav_container a.active {
+        background-image: none;
+        text-decoration: underline;
+    }
+
+    .nav_container a.active_project {
+        background-image:none;
+        text-decoration: underline;
+    }
+  }

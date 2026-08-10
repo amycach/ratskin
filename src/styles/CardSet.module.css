@@ -1,0 +1,12 @@
+.card {
+  width:200px;
+  box-shadow:2px 2px 5px #00495c;
+}
+
+.cards_container {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:center;
+  gap:1rem;
+}
