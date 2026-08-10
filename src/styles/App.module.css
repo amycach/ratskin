@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&family=Irish+Grover&family=Life+Savers:wght@400;700;800&family=Luckiest+Guy&family=Moo+Lah+Lah&display=swap');
+
+.app_container {
+  width:100%;
+  min-height:100vh;
+  background-image: url('../assets/background.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.center_column {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+}
+
+.page_container {
+  width: 100%;
+  height:max-content;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  position:relative;
+}
+
+.titles {
+  font-family: "Moo Lah Lah", sans-serif;
+  font-size:2.5vw;
+  color:#2e1507;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
