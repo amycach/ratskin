@@ -1,6 +1,7 @@
 import styles_global from "../styles/App.module.css";
 import styles from "../styles/Home.module.css";
 
+import { useState, useEffect } from "react";
 import ReactCurvedText from "react-curved-text";
 import { motion as m } from "framer-motion";
 import { NavLink } from "react-router-dom";
@@ -17,6 +18,26 @@ import rat_frog from "../assets/rat-pngs/rat-and-frog.avif"
 
 export default function Home() {
 
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 768;
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    // Handler to check the screen width
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Attach listener
+    window.addEventListener('resize', handleResize);
+
+    // Clean up listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className={styles_global.page_container}>
       <m.div
@@ -30,30 +51,28 @@ export default function Home() {
           <div className={styles.band_text}>
             <div>
               <ReactCurvedText
-                width={600}
-                height={80}
-                cx={350}
+                width={isMobile ? 300 : 600}
+                height={isMobile ? 60 : 80}
+                cx={isMobile? 140 : 350}
                 cy={130}
                 rx={300}
                 ry={100}
-                startOffset={200}
+                startOffset={isMobile ? 300 : 200}
                 reversed={true}
                 text="The World's First and only"
-                textProps={{ style: { fontFamily: "Henny Penny", fontSize: "2rem" } }}
               />
             </div>
             <div className={styles.band_text_2}>
               <ReactCurvedText
-                width={600}
+                width={isMobile ? 300 : 600}
                 height={90}
-                cx={390}
-                cy={130}
+                cx={isMobile ? 150 : 390}
+                cy={isMobile ? 120 : 130}
                 rx={200}
                 ry={100}
-                startOffset={160}
+                startOffset={isMobile ? 230 : 160}
                 reversed={true}
                 text="Drag Country Band"
-                textProps={{ style: { fontFamily: "Henny Penny", fontSize: "2rem" } }}
               />
             </div>
 

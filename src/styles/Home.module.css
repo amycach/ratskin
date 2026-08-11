@@ -1,216 +1,303 @@
 .angel_rat {
   position: absolute;
-  width:15rem;
+  width: 15rem;
   left: -5rem;
-  top:-5rem;
+  top: -5rem;
 }
 
-.band_text{
-  display:flex;
+.band_text {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 10;
+
+  font-family: 'Henny Penny';
+  font-size: 1.75rem;
 }
 
 .band_text_2 {
   margin-top: -2rem;
 }
 
-.contact_container >* a {
+.contact_container>* a {
   color: #EBD194;
   transition: 0.3s ease;
 }
 
-.contact_container >* a:hover {
+.contact_container>* a:hover {
   text-shadow: 4px 4px 4px #080926;
 }
 
-.contact_container >* a:active {
+.contact_container>* a:active {
   color: #EBD194;
 }
 
-.contact_container >* a:visited {
+.contact_container>* a:visited {
   color: #EBD194;
 }
 
 .contact_container {
   background-image: url('../assets/denim-background.avif');
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
 
-  position:relative;
-  display:flex;
+  position: relative;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:2rem;
-  padding:5rem;
+  gap: 2rem;
+  padding: 5rem;
 }
 
 .contact_title {
   font-family: "Irish Grover", system-ui;
-  font-size:3rem;
+  font-size: 3rem;
   color: #EBD194;
-    -webkit-text-stroke: 2px #FF5C5A;
+  -webkit-text-stroke: 2px #FF5C5A;
 }
 
 .contact_text {
-  font-weight:500;
-  font-size:1rem;
+  font-weight: 500;
+  font-size: 1rem;
   color: #EBD194;
 }
 
 .devil_rat {
   position: absolute;
-  width:12rem;
+  width: 12rem;
   right: -5rem;
   bottom: -5rem;
 }
 
 .home_container {
   width: 100%;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding:1rem;
-  gap:10rem;
-  margin-bottom:6rem;
+  padding: 1rem;
+  gap: 10rem;
+  margin-bottom: 6rem;
 }
 
 .logo {
-  width:25rem;
-  top:-6rem;
-  left:-16rem;
-  transform: rotate(-10deg);
+  width: 22rem;
+  top: -6rem;
+  left: -12rem;
+  transform: rotate(-5deg);
 }
 
 .next_show_title {
   font-family: "Henny Penny", system-ui;
-  font-size:3rem;
+  font-size: 3rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .next_show_link {
   background-color: #2C2D42;
-  font-size:1rem;
+  font-size: 1rem;
   font-family: "Life Savers", serif;
-  font-weight:600;
-  color:white;
+  font-weight: 600;
+  color: white;
   text-decoration: none;
-  padding:1rem;
-  border-radius:20px;
+  padding: 1rem;
+  border-radius: 20px;
   transition: 0.2s ease;
 
 }
 
 .next_show_link:hover {
-  box-shadow:2px 2px 5px #00495c;
+  box-shadow: 2px 2px 5px #00495c;
 }
 
 .photo_grid {
-  position:relative;
-  width:20rem;
-  height:40rem;
-  display:flex;
-  flex-wrap:wrap;
-  gap:1rem;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 20rem;
+  height: 40rem;
   margin-top: -2rem;
 }
 
-.photo_grid > img {
-  position:absolute;
-  
+.photo_grid>img {
+  position: absolute;
+
 }
 
 .photo_buddies {
-  width:20rem;
-  right:-8rem;
+  width: 20rem;
+  right: -8rem;
   top: 12rem;
-  box-shadow:2px 2px 5px #000000;
+  box-shadow: 2px 2px 5px #000000;
 }
 
 .photo_collingwood {
-  width:22rem;
+  width: 22rem;
   transform: rotate(8deg);
-  top:21rem;
-  box-shadow:2px 2px 5px #000000;
+  top: 21rem;
+  box-shadow: 2px 2px 5px #000000;
 }
 
 .photo_family {
-  width:12rem;
+  width: 12rem;
   transform: rotate(-10deg);
-  left:-5rem;
-  top:6rem;
-  box-shadow:2px 2px 5px #000000;
+  left: -5rem;
+  top: 6rem;
+  box-shadow: 2px 2px 5px #000000;
 }
 
 .photo_thumbnail {
-  width:22rem;
+  width: 22rem;
   transform: rotate(10deg);
-  top:2rem;
+  top: 2rem;
   right: -7rem;
-  box-shadow:2px 2px 5px #000000;
+  box-shadow: 2px 2px 5px #000000;
 
 }
 
 .tour_container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  margin:1rem;
+  margin: 1rem;
 }
 
 .tour_image {
-  width:20rem;
+  width: 20rem;
 }
 
 .tour_locations {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   font-family: "Luckiest Guy", cursive;
-  color:yellow;
-  font-size:1.3rem;
-  -webkit-text-stroke: 1px #000000; 
+  color: yellow;
+  font-size: 1.3rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #000000;
 }
 
-.tour_locations > a {
-  color:yellow;
+.tour_locations>a {
+  color: yellow;
   text-decoration: none;
 }
 
-.tour_locations > a:visited {
-  color:yellow;
+.tour_locations>a:visited {
+  color: yellow;
 }
 
-.tour_locations > a:hover {
-  color:#05e135;
+.tour_locations>a:hover {
+  color: #05e135;
 }
 
-.tour_locations > a:active {
-  color:yellow;
+.tour_locations>a:active {
+  color: yellow;
 }
 
 .tour_title {
   font-family: "Luckiest Guy", cursive;
-  color:yellow;
-  font-size:2rem;
+  color: yellow;
+  font-size: 2rem;
+  text-align: center;
   text-shadow: 3px -3px 0px red, 7px -7px 0px blue;
-  -webkit-text-stroke: 2px #000000; 
+  -webkit-text-stroke: 2px #000000;
 }
 
 .trucker_title {
   font-family: "Devonshire", cursive;
-  font-size:3rem;
-  color:#d8cf22;
-  text-shadow:3px 3px 2px black;
+  font-size: 3rem;
+  color: #d8cf22;
+  text-shadow: 3px 3px 2px black;
+}
+
+@media (max-width: 1200px) {
+
+  .logo {
+    width: 20rem;
+    left: -10rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .angel_rat {
+    width: 12rem;
+    top: -6rem;
+    left: -3rem;
+  }
+
+  .band_text {
+    font-size: 16px;
+  }
+
+  .contact_container {
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .devil_rat {
+    width: 10rem;
+    right: -3rem;
+    bottom: -7rem;
+    transform: rotate(30deg)
+  }
+
+  .logo {
+    width: 14rem;
+    left: -5rem;
+    top: -4rem;
+  }
+
+  .next_show_link {
+    font-size: 16px;
+  }
+
+  .next_show_title {
+    font-size: 25px;
+  }
+
+  .photo_grid {
+    width: 10rem;
+    height: 30rem;
+    margin-top: 0;
+  }
+
+  .photo_buddies {
+    width: 15rem;
+    right: -6rem;
+    top: 11rem;
+  }
+
+  .photo_collingwood {
+    width: 15rem;
+    top: 19rem;
+    right: -2rem;
+  }
+
+  .photo_family {
+    width: 8rem;
+    left: -5rem;
+    top: 6rem;
+  }
+
+  .photo_thumbnail {
+    width: 15rem;
+    top: 2rem;
+    right: -6rem;
+
+  }
+
+  .tour_locations {
+    font-size: 16px;
+  }
+
+  .tour_title {
+    font-size: 25px;
+  }
 }
