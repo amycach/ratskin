@@ -4,10 +4,9 @@ import styles from "../styles/Home.module.css";
 import { motion as m } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-import angel_rat from "../assets/Angel NO BG.PNG";
-import devil_rat from "../assets/Devil NO BG.PNG"
-import rat_frog from "../assets/rat-and-frog.PNG"
-import collingwood from "../assets/collingwood.jpg";
+import angel_rat from "../assets/rat-pngs/Angel NO BG.PNG";
+import devil_rat from "../assets/rat-pngs/Devil NO BG.PNG"
+import rat_frog from "../assets/rat-pngs/rat-and-frog.PNG"
 
 export default function Home() {
 
@@ -20,8 +19,15 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         exit={{ opacity: 0 }}
       >
-        <img className={styles.collingwood} loading="lazy" src={collingwood} alt="rats at collingwood" />
-        {/* <div className={styles_global.center_column}>
+        <div>
+          <div className={styles.page_title}>
+            The world's first and only drag country band
+          </div>
+          <div className={styles.photo_grid}>
+
+          </div>
+        </div>
+       {/* <div className={styles_global.center_column}>
           <div className={styles.trucker_title}>
             Tucker music video out now!
           </div>

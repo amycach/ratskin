@@ -3,13 +3,13 @@ import styles from "../styles/Shows.module.css"
 
 import Show from "../components/Show";
 
-import ratthew from "../assets/Ratthew NO BG.png";
-import ratalie from "../assets/Ratalie NO BG.png";
-import ratricia from "../assets/Ratricia NO BG.png"
+import ratthew from "../assets/rat-pngs/Ratthew NO BG.png";
+import ratalie from "../assets/rat-pngs/Ratalie NO BG.png";
+import ratricia from "../assets/rat-pngs/Ratricia NO BG.png"
 
-import posterBarrie from "../assets/poster-barrie.png";
-import posterQC from "../assets/poster-qc.png";
-import posterTour from "../assets/poster-tour.png";
+import posterBarrie from "../assets/posters/poster-barrie.png";
+import posterQC from "../assets/posters/poster-qc.png";
+import posterTour from "../assets/posters/poster-tour.png";
 
 import { motion as m } from "framer-motion";
 import { useEffect } from "react";
