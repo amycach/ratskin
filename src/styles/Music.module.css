@@ -19,6 +19,7 @@
 .music_grid>a {
   padding: 10px 20px 10px 20px;
   font-family: "Life Savers", serif;
+  font-weight: 500;
   text-decoration: none;
   background: #2C2D42;
   border: 2px solid #FF5C5A;
@@ -30,7 +31,7 @@
 .music_grid>a:hover {
   background: #EBD194;
   color: #2C2D42;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .music_titles {
@@ -64,6 +65,7 @@
 
 .music_video_iframe {
   width: 560px;
+  height: 315px;
 }
 
 .music_video_titles {
@@ -72,11 +74,27 @@
   font-family: "Irish Grover", system-ui;
 }
 
+.videos_container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
 @media (max-width: 768px) {
 
   .music_grid {
     width: 80%;
   }
+
+  .music_grid>a:hover {
+  background: #2C2D42;
+  color: #EBD194;
+  font-weight: 600;
+}
 
   .music_titles {
     font-size: 24px;
@@ -87,6 +105,10 @@
   .music_titles>a {
     text-decoration: underline wavy 2px;
   }
+
+  .music_titles>a:hover {
+  text-shadow: 0 0 0;
+}
 
   .music_video_iframe {
     width: 100%;

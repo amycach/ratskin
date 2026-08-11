@@ -77,7 +77,7 @@ export default function Music() {
           <div className={styles.music_titles}>
             Music Videos
           </div>
-          <div className={styles_global.center_column}>
+          <div className={styles.videos_container}>
             {/* <div>
           <div className={styles.music_video_titles}>
             Trucker

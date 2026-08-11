@@ -110,15 +110,15 @@ export default function Home() {
             </div>
             <img src={rat_frog} alt="frog and rat making out" className={styles.tour_image} loading="lazy"></img>
             <div className={styles.tour_locations}>
-              <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.bandsintown.com%2Fe%2F108709206-the-ratskin-family-band-at-the-toucan%3Fcame_from%3D209%26utm_medium%3Dweb%26utm_source%3Dartist_page%26utm_campaign%3Dticket_rsvp%26utm_content%3Dlink_in_bio%26fbclid%3DPAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafqNPKcPADBTnfM_ned5F9gy-3uNjm65fhfbj33WSYqWO7bgMlhKnuj0O9eWA_aem_dOtr4OXhi-p6Hctkgyx2Vg&e=AUB26N85-wlcL4bRBic3S-jTSVgQwWPFvdgCd5KeRF4FTvNozstTuuVHE4QkLhDA-Y_rFWv_9y987W9IORomC86GLrNq7GUy5O2tWhOf0_SmebZf25Pv9Dvmt-SAtvxYpJBiMGvxVsYBrEltw-d-h8Y"
+              <a href="https://www.bandsintown.com/e/108709206-the-ratskin-family-band-at-the-toucan?came_from=209&utm_medium=web&utm_source=artist_page&utm_campaign=ticket_rsvp"
                 target="_blank" rel="noopener noreferrer">
                 Kingston - August 13th - Toucan
               </a>
-              <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.eventbrite.ca%2Fe%2Ffriendly-frogs-freak-show-the-ratskin-family-band-the-oscillators-tickets-1994488625168%3Faff%3Dweb%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafs159NaNp0l6VO8upuH_nmZP1h5TSLC1mVkjnYcGEPigfbyTFBnmh66Gpqhg_aem_jEqiregH8YazG_SJY0m7CA&e=AUD5iWKDPObZ6iAK7PrQVaK6w2TRBvY5MIr-jBKdIQ_zqxzNmfrHgQp4NGEh9Oi9-uYFWRVMtcZRLsFfbtNTO_-Gsk-1V0cfv9Pq1Ng4SRxFaaRzNYPtjIX_Q2aJZ9mXEFEHwryUbeNyJwZ_Wflt490"
+              <a href="https://www.eventbrite.ca/e/friendly-frogs-freak-show-the-ratskin-family-band-the-oscillators-tickets-1994488625168"
                 target="_blank" rel="noopener noreferrer">
                 Ottawa - August 14th - House of TARG
               </a>
-              <a href="https://l.instagram.com/?u=https%3A%2F%2Fthepointofsale.com%2Ftickets%2Ffrogs-ratskin-quai%3Ffbclid%3DPAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafONmBz02dG3XkaHFw7bZDNrumnbQz_904WHMOqqJCAQfcC8I3eU9tulKjZig_aem_YR1Er5Y119abQcZHlRi3kQ%26utm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio&e=AUBy-PoJeG7hdNp8zUXffiXUu03z2jLKtRV2AL1gL3aSu_SGvHQF35Y6wHy47kTZTMW2nkDRxydz1t-xQN4aj_UYbas8-LZS5A7r2HmhqFZlSGQKrJVFQTIYExrK7z27GA_0p4ce-BdNMdVekFRuctE"
+              <a href="https://thepointofsale.com/tickets/frogs-ratskin-quai?fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadIZqrfIDw6jK9htVKqmYeflCTcB1RJIVkSgW46pEO-ZhvoMruTXm6AkndrAg_aem_cRIeM0MUjo0sNG9ElrJeRg&utm_source=ig&utm_medium=social&utm_content=link_in_bio"
                 target="_blank" rel="noopener noreferrer">
                 Montreal - August 16th - Quai des Brumes
               </a>
