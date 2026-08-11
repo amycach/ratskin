@@ -6,12 +6,12 @@
 }
 
 .info_date {
-  color:#2C2D42;
+  color:#EBD194;
   font-size:1vw;
 }
 
 .info_location {
-  font-size:0.75vw;
+  color:#EBD194;
 }
 
 .info_titles {
@@ -26,7 +26,11 @@
 
 .show_container {
 
-  background-color:rgba(255, 92, 90, 0.50);
+  background-image: url('../assets/denim-background.jpg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:cover;
+
   display:flex;
   flex-direction:row;
   justify-content: space-between;
@@ -37,20 +41,22 @@
 .show_title {
   font-family: "Gravitas One", serif;
   font-size:1.5vw;
+  color: #EBD194;
+    -webkit-text-stroke: 1px #FF5C5A;
 }
 
 .ticket_link {
-  color:#2C2D42;
+  color:#EBD194;
   font-weight: 500;
 }
 
 .ticket_link:active {
-  color:#2C2D42;
-  text-shadow: 1px 1px 1px #00495c; 
+  color:#EBD194;
+  text-shadow: 1px 1px 1px #ffffff; 
   text-decoration:underline;
 }
 
 .ticket_link:hover {
-    color:#393c80;
+    color:#ffffff;
     cursor: pointer;
 }
