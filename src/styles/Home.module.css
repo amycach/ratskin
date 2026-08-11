@@ -1,5 +1,12 @@
+.angel_rat {
+  position: absolute;
+  width:15rem;
+  left: -5rem;
+  top:-5rem;
+}
+
 .contact_container >* a {
-  color: #dbb930;
+  color: #EBD194;
   transition: 0.3s ease;
 }
 
@@ -8,11 +15,11 @@
 }
 
 .contact_container >* a:active {
-  color: #dbb930;
+  color: #EBD194;
 }
 
 .contact_container >* a:visited {
-  color: #dbb930;
+  color: #EBD194;
 }
 
 .collingwood {
@@ -20,11 +27,12 @@
 }
 
 .contact_container {
-  background-image: url('../assets/denim-background.png');
+  background-image: url('../assets/denim-background.jpg');
   background-repeat:no-repeat;
   background-position: center;
   background-size:cover;
 
+  position:relative;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -35,16 +43,22 @@
 
 .contact_title {
   font-family: "Irish Grover", system-ui;
-  font-size:2.5vw;
-  color: #dbb930;
-  -webkit-text-stroke: 2px #2c2509; 
+  font-size:2.8vw;
+  color: #EBD194;
+    -webkit-text-stroke: 2px #FF5C5A;
 }
 
 .contact_text {
   font-weight:500;
   font-size:1vw;
-  text-shadow: 2px 2px 2px #080926;
-  color: #dbb930;
+  color: #EBD194;
+}
+
+.devil_rat {
+  position: absolute;
+  width:12rem;
+  right: -5rem;
+  bottom: -5rem;
 }
 
 .home_container {
@@ -59,14 +73,13 @@
 }
 
 .next_show_title {
-  font-family: "Moo Lah Lah", sans-serif;
+  font-family: "Henny Penny", system-ui;
   font-size:2.5vw;
   font-weight: 500;
-  color:#ff008c;
 }
 
 .next_show_link {
-  background-color: #ff008c;
+  background-color: #2C2D42;
   font-size:1vw;
   font-family: "Life Savers", serif;
   font-weight:600;
@@ -88,9 +101,7 @@
   align-items: center;
   justify-content: center;
 
-  /* background-color: #ef71b6;
-  border: 4px dotted white;
-  border-radius: 20px; */
+  background-color:rgba(255, 92, 90, 0.50);
   margin:1rem;
   padding:2rem;
 }

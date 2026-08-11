@@ -45,15 +45,12 @@ import cartoonZeph from "../assets/z-zephline.png";
 
 import {motion as m } from "framer-motion";
 import { useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
 
 export default function Fun() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const navigate = useNavigate();
 
   return (
     <m.div 

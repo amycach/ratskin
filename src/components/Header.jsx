@@ -15,16 +15,16 @@ export default function Header() {
           Home
         </NavLink>
         <NavLink
-          to="/shows"
-          className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
-        >
-          Shows
-        </NavLink>
-        <NavLink
           to="/music"
           className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
         >
           Music
+        </NavLink>
+        <NavLink
+          to="/shows"
+          className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
+        >
+          Shows
         </NavLink>
         {/*<NavLink
           to="/meet-the-rats"

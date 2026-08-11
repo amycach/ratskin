@@ -4,6 +4,8 @@ import styles from "../styles/Home.module.css";
 import { motion as m } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
+import angel_rat from "../assets/Angel NO BG.PNG";
+import devil_rat from "../assets/Devil NO BG.PNG"
 import rat_frog from "../assets/rat-and-frog.PNG"
 import collingwood from "../assets/collingwood.jpg";
 
@@ -19,12 +21,12 @@ export default function Home() {
         exit={{ opacity: 0 }}
       >
         <img className={styles.collingwood} loading="lazy" src={collingwood} alt="rats at collingwood" />
-        <div className={styles_global.center_column}>
+        {/* <div className={styles_global.center_column}>
           <div className={styles.trucker_title}>
             Tucker music video out now!
           </div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/t36H54831oM?si=8bNirz9sjRcYEnZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        </div> */}
 
         <div className={styles_global.center_column}>
           <div className={styles.next_show_title}>
@@ -61,6 +63,8 @@ export default function Home() {
         </div>
 
         <div className={styles.contact_container} id="contact">
+          <img className={styles.angel_rat} src={angel_rat} alt="angel rat"></img>
+          <img className={styles.devil_rat} src={devil_rat} alt="devil rat"></img>
           <div className={styles_global.center_column}>
             <div className={styles.contact_title}>
               Contact us

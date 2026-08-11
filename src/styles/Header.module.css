@@ -6,74 +6,77 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
+
 }
 
 .nav_container {
-    width:100%;
-    position:relative;
-    display:flex;
+    width: 100%;
+    position: relative;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
-.nav_container > a {
-    border:none;
+.nav_container>a {
+    border: none;
     width: 13vw;
     margin-bottom: 1rem;
-    padding:2vw 0 2vw 0;
+    padding: 2vw 0 2vw 0;
     font-family: "Irish Grover", system-ui;
-    font-size:1.5vw;
-    text-align:center;
+    font-size: 1.5vw;
+    text-align: center;
     text-decoration: none;
     transition: 0.1s;
 }
 
 .nav_container a.inactive {
-    color:#ff008c;
+    color: #EBD194;
+    -webkit-text-stroke: 1px #FF5C5A;
 }
 
 .nav_container a.active {
-  color:#ff008c;
-  text-shadow: 1px 1px 1px #00495c; 
-  text-decoration:underline;
+    color: #EBD194;
+    -webkit-text-stroke: 1px #FF5C5A;
+    text-shadow: 1px 1px 1px #00495c;
+    text-decoration: underline wavy;
 }
 
-.nav_container > a.inactive:hover {
-    color:#ef71b6;
+.nav_container>a.inactive:hover {
+    color: #1C1B2D;
     cursor: pointer;
 }
 
-.nav_container > a.active:hover {
+.nav_container>a.active:hover {
     cursor: pointer;
 }
 
 
 @media (max-width: 1200px) {
- 
-    .nav_container > a {
-        width:10rem;
-        padding:25px 0 10px 0;
-        font-size:1.2rem;
+
+    .nav_container>a {
+        width: 10rem;
+        padding: 25px 0 10px 0;
+        font-size: 1.2rem;
     }
-      .nav_container > a.inactive:hover {
-        color:#A90B0B;
+
+    .nav_container>a.inactive:hover {
+        color: #A90B0B;
     }
-  }
+}
 
 
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
 
     .icons_container {
-        right:1rem;
+        right: 1rem;
     }
 
     .nav_container {
-        width:70%;
+        width: 70%;
     }
 
-    .nav_container > a {
-        font-size:1rem;
+    .nav_container>a {
+        font-size: 1rem;
     }
 
     .nav_container a.active {
@@ -82,7 +85,7 @@
     }
 
     .nav_container a.active_project {
-        background-image:none;
+        background-image: none;
         text-decoration: underline;
     }
-  }
+}

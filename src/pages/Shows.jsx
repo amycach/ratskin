@@ -13,7 +13,6 @@ import posterTour from "../assets/poster-tour.png";
 
 import { motion as m } from "framer-motion";
 import { useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
 
 export default function Shows() {
 
