@@ -84,6 +84,9 @@ export default function Home() {
             <img className={styles.photo_buddies} src={buddies} alt="rats at buddies" />
             <img className={styles.logo} src={logo} alt="the ratskin family band" />
           </div>
+          <div className={styles.photo_creds}>
+            Photos taken by Rey Nemati
+          </div>
         </div>
         {/* <div className={styles_global.center_column}>
           <div className={styles.trucker_title}>

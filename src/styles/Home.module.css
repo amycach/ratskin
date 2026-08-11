@@ -113,10 +113,16 @@
   box-shadow: 2px 2px 5px #00495c;
 }
 
+.photo_creds {
+  font-size: 1rem;
+  font-family: "Life Savers", serif;
+  font-weight: 600;
+}
+
 .photo_grid {
   position: relative;
   width: 20rem;
-  height: 40rem;
+  height: 38rem;
   margin-top: -2rem;
 }
 
