@@ -5,6 +5,18 @@
   top:-5rem;
 }
 
+.band_text{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.band_text_2 {
+  margin-top: -2rem;
+}
+
 .contact_container >* a {
   color: #EBD194;
   transition: 0.3s ease;
@@ -72,6 +84,13 @@
   margin-bottom:3rem;
 }
 
+.logo {
+  width:25rem;
+  top:-6rem;
+  left:-16rem;
+  transform: rotate(-10deg);
+}
+
 .next_show_title {
   font-family: "Henny Penny", system-ui;
   font-size:2.5vw;
@@ -93,6 +112,60 @@
 
 .next_show_link:hover {
   box-shadow:2px 2px 5px #00495c;
+}
+
+.page_title {
+  font-family: "Henny Penny", system-ui;
+  font-size:2.5vw;
+  font-weight: 500;
+}
+
+.photo_grid {
+  position:relative;
+  width:20rem;
+  height:30rem;
+  display:flex;
+  flex-wrap:wrap;
+  gap:1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+
+.photo_grid > img {
+  position:absolute;
+  
+}
+
+.photo_buddies {
+  width:20rem;
+  right:-8rem;
+  top: 12rem;
+  box-shadow:2px 2px 5px #000000;
+}
+
+.photo_collingwood {
+  width:22rem;
+  transform: rotate(8deg);
+  top:21rem;
+  box-shadow:2px 2px 5px #000000;
+}
+
+.photo_family {
+  width:12rem;
+  transform: rotate(-10deg);
+  left:-5rem;
+  top:6rem;
+  box-shadow:2px 2px 5px #000000;
+}
+
+.photo_thumbnail {
+  width:22rem;
+  transform: rotate(10deg);
+  top:2rem;
+  right: -7rem;
+  box-shadow:2px 2px 5px #000000;
+
 }
 
 .tour_container {

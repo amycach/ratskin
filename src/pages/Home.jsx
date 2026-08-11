@@ -1,8 +1,15 @@
 import styles_global from "../styles/App.module.css";
 import styles from "../styles/Home.module.css";
 
+import ReactCurvedText from "react-curved-text";
 import { motion as m } from "framer-motion";
 import { NavLink } from "react-router-dom";
+
+import logo from "../assets/ratskinlogo.png";
+import collingwood from "../assets/band-pics/collingwood.jpg";
+import buddies from "../assets/band-pics/buddies.jpg";
+import family from "../assets/band-pics/family.jpeg";
+import thumbnail from "../assets/band-pics/thumbnail.png";
 
 import angel_rat from "../assets/rat-pngs/Angel NO BG.PNG";
 import devil_rat from "../assets/rat-pngs/Devil NO BG.PNG"
@@ -19,15 +26,47 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         exit={{ opacity: 0 }}
       >
-        <div>
-          <div className={styles.page_title}>
-            The world's first and only drag country band
-          </div>
-          <div className={styles.photo_grid}>
+        <div className={styles_global.center_column}>
+          <div className={styles.band_text}>
+            <div>
+              <ReactCurvedText
+                width={600}
+                height={80}
+                cx={350}
+                cy={130}
+                rx={300}
+                ry={100}
+                startOffset={200}
+                reversed={true}
+                text="The World's First and only"
+                textProps={{ style: { fontFamily: "Henny Penny", fontSize: "2rem" } }}
+              />
+            </div>
+            <div className={styles.band_text_2}>
+              <ReactCurvedText
+                width={600}
+                height={90}
+                cx={390}
+                cy={130}
+                rx={200}
+                ry={100}
+                startOffset={160}
+                reversed={true}
+                text="Drag Country Band"
+                textProps={{ style: { fontFamily: "Henny Penny", fontSize: "2rem" } }}
+              />
+            </div>
 
           </div>
+          <div className={styles.photo_grid}>
+            <img className={styles.photo_thumbnail} src={thumbnail} alt="rats in music video thumbnail" />
+            <img className={styles.photo_family} src={family} alt="rats in a family portrait" />
+            <img className={styles.photo_collingwood} src={collingwood} alt="rats at collingwood pride" />
+            <img className={styles.photo_buddies} src={buddies} alt="rats at buddies" />
+            <img className={styles.logo} src={logo} alt="the ratskin family band" />
+          </div>
         </div>
-       {/* <div className={styles_global.center_column}>
+        {/* <div className={styles_global.center_column}>
           <div className={styles.trucker_title}>
             Tucker music video out now!
           </div>

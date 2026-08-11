@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^13.0.0",
     "react": "^19.2.8",
+    "react-curved-text": "^3.0.1",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.2",
     "react-router-hash-link": "^2.4.3",
