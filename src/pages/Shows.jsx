@@ -7,9 +7,9 @@ import ratthew from "../assets/rat-pngs/Ratthew NO BG.png";
 import ratalie from "../assets/rat-pngs/Ratalie NO BG.png";
 import ratricia from "../assets/rat-pngs/Ratricia NO BG.png"
 
-import posterBarrie from "../assets/posters/poster-barrie.png";
-import posterQC from "../assets/posters/poster-qc.png";
-import posterTour from "../assets/posters/poster-tour.png";
+import posterBarrie from "../assets/posters/poster-barrie.avif";
+import posterQC from "../assets/posters/poster-qc.avif";
+import posterTour from "../assets/posters/poster-tour.avif";
 
 import { motion as m } from "framer-motion";
 import { useEffect } from "react";

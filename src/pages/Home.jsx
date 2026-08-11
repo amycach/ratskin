@@ -60,8 +60,8 @@ export default function Home() {
           </div>
           <div className={styles.photo_grid}>
             <img className={styles.photo_thumbnail} src={thumbnail} alt="rats in music video thumbnail" />
-            <img className={styles.photo_family} src={family} alt="rats in a family portrait" />
             <img className={styles.photo_collingwood} src={collingwood} alt="rats at collingwood pride" />
+            <img className={styles.photo_family} src={family} alt="rats in a family portrait" />
             <img className={styles.photo_buddies} src={buddies} alt="rats at buddies" />
             <img className={styles.logo} src={logo} alt="the ratskin family band" />
           </div>
@@ -86,7 +86,7 @@ export default function Home() {
                 Ontario tour
               </div>
             </div>
-            <img src={rat_frog} alt="frog and rat making out" className={styles.tour_image}></img>
+            <img src={rat_frog} alt="frog and rat making out" className={styles.tour_image} loading="lazy"></img>
             <div className={styles.tour_locations}>
               <a href="https://l.instagram.com/?u=https%3A%2F%2Fwww.bandsintown.com%2Fe%2F108709206-the-ratskin-family-band-at-the-toucan%3Fcame_from%3D209%26utm_medium%3Dweb%26utm_source%3Dartist_page%26utm_campaign%3Dticket_rsvp%26utm_content%3Dlink_in_bio%26fbclid%3DPAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafqNPKcPADBTnfM_ned5F9gy-3uNjm65fhfbj33WSYqWO7bgMlhKnuj0O9eWA_aem_dOtr4OXhi-p6Hctkgyx2Vg&e=AUB26N85-wlcL4bRBic3S-jTSVgQwWPFvdgCd5KeRF4FTvNozstTuuVHE4QkLhDA-Y_rFWv_9y987W9IORomC86GLrNq7GUy5O2tWhOf0_SmebZf25Pv9Dvmt-SAtvxYpJBiMGvxVsYBrEltw-d-h8Y"
                 target="_blank" rel="noopener noreferrer">
@@ -108,8 +108,8 @@ export default function Home() {
         </div>
 
         <div className={styles.contact_container} id="contact">
-          <img className={styles.angel_rat} src={angel_rat} alt="angel rat"></img>
-          <img className={styles.devil_rat} src={devil_rat} alt="devil rat"></img>
+          <img className={styles.angel_rat} src={angel_rat} alt="angel rat" loading="lazy"></img>
+          <img className={styles.devil_rat} src={devil_rat} alt="devil rat" loading="lazy"></img>
           <div className={styles_global.center_column}>
             <div className={styles.contact_title}>
               Contact us
