@@ -1,26 +1,13 @@
 import styles_global from "../styles/App.module.css";
 import styles from "../styles/Home.module.css";
 
-import { useEffect } from "react";
 import { motion as m } from "framer-motion";
-import { useLocation, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import rat_frog from "../assets/rat-and-frog.PNG"
 import collingwood from "../assets/collingwood.jpg";
 
 export default function Home() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const targetId = location.state?.scrollId;
-
-    if (targetId) {
-      const element = document.getElementById(targetId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
 
   return (
     <div className={styles_global.page_container}>
@@ -73,7 +60,7 @@ export default function Home() {
           </NavLink>
         </div>
 
-        <div className={styles.contact_container} id="contact-us">
+        <div className={styles.contact_container} id="contact">
           <div className={styles_global.center_column}>
             <div className={styles.contact_title}>
               Contact us

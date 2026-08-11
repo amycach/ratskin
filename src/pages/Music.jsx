@@ -20,7 +20,7 @@ export default function Music() {
       exit={{ opacity: 0 }}
       className={styles_global.page_container}
     >
-      <div>
+      <div id="contact">
         music
       </div>
     </m.div>

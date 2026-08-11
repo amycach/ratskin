@@ -1,14 +1,9 @@
-import { useNavigate, NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 import "../styles/App.module.css";
 import styles from "../styles/Header.module.css";
 
 export default function Header() {
-
-  const navigate = useNavigate();
-
-  const handleNavigateAndScroll = () => {
-    navigate("/", { state: { scrollToId: "contact-us" } });
-  }
 
   return (
     <div className={styles.header_container}>
@@ -37,12 +32,13 @@ export default function Header() {
         >
           Meet the Rats
         </NavLink> */}
-        <a
-          onClick={handleNavigateAndScroll}
+        <NavHashLink
+          smooth
+          to="/#contact"
           className={styles.inactive}
         >
           Contact Us
-        </a>
+        </NavHashLink>
         {/* <NavLink
           to="/fun"
           className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
