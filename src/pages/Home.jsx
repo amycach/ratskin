@@ -5,7 +5,7 @@ import ReactCurvedText from "react-curved-text";
 import { motion as m } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-import logo from "../assets/ratskinlogo.png";
+import logo from "../assets/ratskinlogo.avif";
 import collingwood from "../assets/band-pics/collingwood.jpg";
 import buddies from "../assets/band-pics/buddies.jpg";
 import family from "../assets/band-pics/family.jpeg";
