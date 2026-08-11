@@ -7,7 +7,6 @@ export default function Header() {
 
   return (
     <div className={styles.header_container}>
-      <div className={styles.nav_container}>
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
@@ -45,7 +44,6 @@ export default function Header() {
         >
           Fun
         </NavLink> */}
-      </div>
     </div>
   );
 }

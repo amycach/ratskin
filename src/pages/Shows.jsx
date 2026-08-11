@@ -3,9 +3,9 @@ import styles from "../styles/Shows.module.css"
 
 import Show from "../components/Show";
 
-import ratthew from "../assets/rat-pngs/Ratthew NO BG.png";
-import ratalie from "../assets/rat-pngs/Ratalie NO BG.png";
-import ratricia from "../assets/rat-pngs/Ratricia NO BG.png"
+import ratthew from "../assets/rat-pngs/rat-ratthew.avif";
+import ratalie from "../assets/rat-pngs/rat-ratalie.avif";
+import ratricia from "../assets/rat-pngs/rat-ratricia.avif"
 
 import posterBarrie from "../assets/posters/poster-barrie.avif";
 import posterQC from "../assets/posters/poster-qc.avif";

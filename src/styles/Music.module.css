@@ -35,12 +35,13 @@
 
 .music_titles {
   font-family: "Henny Penny", system-ui;
-  font-size:2.5vw;
+  font-size:3rem;
   font-weight: 500;
   transition: 0.2s ease;
 }
 
 .music_titles > a {
+  color:#000000;
   text-decoration: underline wavy 4px;
 }
 
@@ -58,6 +59,6 @@
 
 .music_video_titles {
   color:#2C2D42;
-  font-size:1.5vw;
+  font-size:2rem;
   font-family: "Irish Grover", system-ui;
 }

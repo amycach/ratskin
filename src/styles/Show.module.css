@@ -7,7 +7,7 @@
 
 .info_date {
   color:#EBD194;
-  font-size:1vw;
+  font-size:1rem;
 }
 
 .info_location {
@@ -26,7 +26,7 @@
 
 .show_container {
 
-  background-image: url('../assets/denim-background.jpg');
+  background-image: url('../assets/denim-background.avif');
   background-repeat:no-repeat;
   background-position: center;
   background-size:cover;
@@ -40,7 +40,7 @@
 
 .show_title {
   font-family: "Gravitas One", serif;
-  font-size:1.5vw;
+  font-size:1.7rem;
   color: #EBD194;
     -webkit-text-stroke: 1px #FF5C5A;
 }

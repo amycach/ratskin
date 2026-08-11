@@ -9,11 +9,11 @@ import logo from "../assets/ratskinlogo.png";
 import collingwood from "../assets/band-pics/collingwood.jpg";
 import buddies from "../assets/band-pics/buddies.jpg";
 import family from "../assets/band-pics/family.jpeg";
-import thumbnail from "../assets/band-pics/thumbnail.png";
+import thumbnail from "../assets/band-pics/thumbnail.avif";
 
-import angel_rat from "../assets/rat-pngs/Angel NO BG.PNG";
-import devil_rat from "../assets/rat-pngs/Devil NO BG.PNG"
-import rat_frog from "../assets/rat-pngs/rat-and-frog.PNG"
+import angel_rat from "../assets/rat-pngs/rat-angel.avif";
+import devil_rat from "../assets/rat-pngs/rat-devil.avif"
+import rat_frog from "../assets/rat-pngs/rat-and-frog.avif"
 
 export default function Home() {
 
