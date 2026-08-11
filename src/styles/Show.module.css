@@ -60,3 +60,34 @@
     color:#ffffff;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .info_date {
+    font-size: 12px;
+  }
+
+  .info_location {
+    font-size: 12px;
+  }
+
+  .poster_container {
+    width:80%;
+  }
+
+  .show_container {
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  padding:2rem;
+}
+
+  .show_title {
+    font-size: 24px;
+  }
+
+  .ticket_link {
+    font-size: 12px;
+  }
+
+}
