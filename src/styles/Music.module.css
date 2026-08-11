@@ -1,64 +1,98 @@
 .music_container {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:4rem;
+  gap: 4rem;
   margin-top: 4rem;
 }
 
 .music_grid {
-  width:60%;
-  display:flex;
-  flex-wrap:wrap;
-  gap:1rem;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
 }
 
-.music_grid > a {
-  padding:10px 20px 10px 20px;
+.music_grid>a {
+  padding: 10px 20px 10px 20px;
   font-family: "Life Savers", serif;
   text-decoration: none;
-  background:#2C2D42;
+  background: #2C2D42;
   border: 2px solid #FF5C5A;
-  color:#EBD194;
+  color: #EBD194;
   border-radius: 20px;
   transition: 0.2s ease;
 }
 
-.music_grid > a:hover {
-  background:#EBD194;
-  color:#2C2D42;
+.music_grid>a:hover {
+  background: #EBD194;
+  color: #2C2D42;
   font-weight: 600;
 }
 
 .music_titles {
   font-family: "Henny Penny", system-ui;
-  font-size:3rem;
+  font-size: 3rem;
   font-weight: 500;
+  text-align: center;
   transition: 0.2s ease;
 }
 
-.music_titles > a {
-  color:#000000;
+.music_titles>a {
+  color: #000000;
   text-decoration: underline wavy 4px;
 }
 
-.music_titles > a:hover {
-  text-shadow: 1px 1px 1px #00495c; 
+.music_titles>a:hover {
+  text-shadow: 1px 1px 1px #00495c;
 }
 
-.music_titles > a:active {
-  color:#000000;
+.music_titles>a:active {
+  color: #000000;
 }
 
-.music_titles > a:visited {
-  color:#000000;
+.music_titles>a:visited {
+  color: #000000;
+}
+
+.music_video_container {
+  width:100%;
+}
+
+.music_video_iframe {
+  width: 560px;
 }
 
 .music_video_titles {
-  color:#2C2D42;
-  font-size:2rem;
+  color: #2C2D42;
+  font-size: 2rem;
   font-family: "Irish Grover", system-ui;
+}
+
+@media (max-width: 768px) {
+
+  .music_grid {
+    width: 80%;
+  }
+
+  .music_titles {
+    font-size: 28px;
+    margin-left:1rem;
+    margin-right:1rem;
+  }
+
+  .music_titles>a {
+    text-decoration: underline wavy 2px;
+  }
+
+  .music_video_iframe {
+    width: 100%;
+  }
+
+  .music_video_titles {
+    font-size: 16px;
+  }
 }

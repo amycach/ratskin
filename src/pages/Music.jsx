@@ -77,18 +77,18 @@ export default function Music() {
           <div className={styles.music_titles}>
             Music Videos
           </div>
-          <div>
+          <div className={styles_global.center_column}>
             {/* <div>
           <div className={styles.music_video_titles}>
             Trucker
           </div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/t36H54831oM?si=8bNirz9sjRcYEnZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div> */}
-            <div>
+            <div className={styles.music_video_container}>
               <div className={styles.music_video_titles}>
                 All You Facists (Bound to Lose)
               </div>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/t36H54831oM?si=8bNirz9sjRcYEnZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe className={styles.music_video_iframe} src="https://www.youtube.com/embed/t36H54831oM?si=8bNirz9sjRcYEnZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
