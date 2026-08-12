@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import ReactCurvedText from "react-curved-text";
 import { motion as m } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logo from "../assets/ratskinlogo.avif";
 import collingwood from "../assets/band-pics/collingwood.jpg";
@@ -53,7 +54,7 @@ export default function Home() {
               <ReactCurvedText
                 width={isMobile ? 300 : 600}
                 height={isMobile ? 60 : 80}
-                cx={isMobile? 140 : 350}
+                cx={isMobile ? 140 : 350}
                 cy={130}
                 rx={300}
                 ry={100}
@@ -87,13 +88,20 @@ export default function Home() {
           <div className={styles.photo_creds}>
             Photos taken by Rey Nemati
           </div>
+          <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
+            target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
+            → PRESAVE OUR EP!!! ←
+            <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
+          </a>
+
         </div>
-        {/* <div className={styles_global.center_column}>
+
+        <div className={styles_global.center_column}>
           <div className={styles.trucker_title}>
             Tucker music video out now!
           </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/t36H54831oM?si=8bNirz9sjRcYEnZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div> */}
+          <iframe className={styles.music_video_iframe} src="https://www.youtube.com/embed/z9zM4JPwsVU?si=Tz0B0WfrNsj-8cqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
         <div className={styles_global.center_column}>
           <div className={styles.next_show_title}>

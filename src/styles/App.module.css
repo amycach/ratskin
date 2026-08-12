@@ -2,7 +2,7 @@
 
 .app_container {
   width:100%;
-  min-height:100vh;
+  height:100vh;
   background-image: url('../assets/background.avif');
   background-attachment: fixed;
   background-size: cover;
@@ -26,6 +26,22 @@
   position:relative;
 }
 
+.presave_link {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-family: "Irish Grover", system-ui;
+  font-size: 3rem;
+  color: #EBD194;
+  -webkit-text-stroke: 2px #FF5C5A;
+  text-decoration: underline wavy 4px #2C2D42;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.presave_link:hover {
+  font-size: 3.1rem;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -42,5 +58,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .presave_link {
+    font-size: 32px;
   }
 }

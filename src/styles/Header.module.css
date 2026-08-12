@@ -27,7 +27,7 @@
     color: #EBD194;
     -webkit-text-stroke: 1px #FF5C5A;
     text-shadow: 1px 1px 1px #00495c;
-    text-decoration: underline wavy;
+    text-decoration: underline wavy #2C2D42;
 }
 
 .header_container>a.inactive:hover {

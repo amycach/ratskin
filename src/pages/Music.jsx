@@ -21,6 +21,11 @@ export default function Music() {
     >
       <div className={styles.music_container}>
         <div className={styles_global.center_column}>
+          <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
+            target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
+            → PRESAVE OUR EP!!! ←
+            <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
+          </a>
           <div className={styles.music_titles}>
             Listen to our latest music <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/trucker?ref=release&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAacwnSz3rbjJoN61JY6U1tciv_GqdrFXP7mYiNoVv9UPZ2bYmC8xFTVlfxYGpw_aem_ZY7-hrAz5Iqab2mSU4x9Tg"
               target="_blank" rel="noopener noreferrer">here</a>!
@@ -78,12 +83,12 @@ export default function Music() {
             Music Videos
           </div>
           <div className={styles.videos_container}>
-            {/* <div>
-          <div className={styles.music_video_titles}>
-            Trucker
-          </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/t36H54831oM?si=8bNirz9sjRcYEnZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div> */}
+            <div>
+              <div className={styles.music_video_titles}>
+                Trucker
+              </div>
+              <iframe className={styles.music_video_iframe} src="https://www.youtube.com/embed/z9zM4JPwsVU?si=Tz0B0WfrNsj-8cqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div className={styles.music_video_container}>
               <div className={styles.music_video_titles}>
                 All You Facists (Bound to Lose)
