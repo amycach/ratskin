@@ -45,6 +45,7 @@
 }
 
 .music_titles>a {
+  font-size: 3rem;
   color: #000000;
   text-decoration: underline wavy 4px;
 }
@@ -104,6 +105,7 @@
   }
 
   .music_titles>a {
+    font-size: 24px;
     text-decoration: underline wavy 2px;
   }
 

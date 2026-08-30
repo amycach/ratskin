@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Shows from "./pages/Shows";
 import Music from "./pages/Music";
+import Press from "./pages/Press";
 import MeetTheRats from "./pages/Meet-The-Rats";
 import Fun from "./pages/Fun"
 import styles_global from "./styles/App.module.css";
@@ -18,6 +19,7 @@ function AnimatedRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/shows" element={<Shows />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/press" element={<Press />} />
           <Route path="/meet-the-rats" element={<MeetTheRats />} />
           <Route path="/fun" element={<Fun />} />
         </Routes>

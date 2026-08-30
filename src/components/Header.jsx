@@ -25,6 +25,12 @@ export default function Header() {
         >
           Shows
         </NavLink>
+        <NavLink
+          to="/press"
+          className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
+        >
+          Press
+        </NavLink>
         {/*<NavLink
           to="/meet-the-rats"
           className={({ isActive }) => (isActive ? styles.active : styles.inactive)}

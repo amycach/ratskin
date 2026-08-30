@@ -20,20 +20,36 @@
   margin-top: -2rem;
 }
 
-.contact_container>* a {
+.button_image {
+  position:absolute;
+  right:-3rem;
+  top:-2rem;
+  width:3rem;
+  visibility: hidden;
+}
+
+.button_image_2 {
+  position:absolute;
+  left:-3rem;
+  bottom:-2rem;
+  width:3rem;
+  visibility: hidden;
+}
+
+.contact_text> a {
   color: #EBD194;
   transition: 0.3s ease;
 }
 
-.contact_container>* a:hover {
+.contact_text> a:hover {
   text-shadow: 4px 4px 4px #080926;
 }
 
-.contact_container>* a:active {
+.contact_text> a:active {
   color: #EBD194;
 }
 
-.contact_container>* a:visited {
+.contact_text> a:visited {
   color: #EBD194;
 }
 
@@ -87,6 +103,39 @@
   top: -6rem;
   left: -12rem;
   transform: rotate(-5deg);
+}
+
+.mailing_list {
+  position:relative;
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+  padding: 1rem;
+  background: #86c3d8;
+  color: #FFFFFF;
+  font-family: "Life Savers", serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.mailing_list:hover {
+  transform: scale(1.05); /* Grows to 120% size */
+}
+
+.mailing_list:hover .button_image {
+  visibility: visible;
+}
+
+.mailing_list:hover .button_image_2 {
+  visibility: visible;
+}
+
+.mailing_list:active {
+  color: #FFFFFF;
+}
+
+.mailling_list:visited {
+  color: #FFFFFF;
 }
 
 .music_video_iframe {
@@ -244,6 +293,14 @@
 
   .band_text {
     font-size: 16px;
+  }
+
+  .button_image {
+    visibility: visible;
+  }
+
+  .button_image_2 {
+    visibility: visible;
   }
 
   .contact_container {

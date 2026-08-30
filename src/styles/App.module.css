@@ -26,6 +26,16 @@
   position:relative;
 }
 
+.page_container_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .presave_link {
   margin-top: 1rem;
   font-size: 3rem;
@@ -33,13 +43,14 @@
   font-size: 3rem;
   color: #EBD194;
   -webkit-text-stroke: 2px #FF5C5A;
-  text-decoration: underline wavy 4px #2C2D42;
+  text-decoration: none;
   text-align: center;
   transition: 0.3s ease;
 }
 
 .presave_link:hover {
-  font-size: 3.1rem;
+  transform: scale(1.05);
+  text-decoration: underline wavy 4px #2C2D42;
 }
 
 @media (prefers-reduced-motion: no-preference) {

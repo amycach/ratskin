@@ -19,11 +19,11 @@ export default function Music() {
       exit={{ opacity: 0 }}
       className={styles_global.page_container}
     >
-      <div className={styles.music_container}>
+      <div className={styles_global.page_container_inner}>
         <div className={styles_global.center_column}>
           <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
             target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
-            → PRESAVE OUR EP!!! ←
+            → PRESAVE OUR EP ←
             <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
           </a>
           <div className={styles.music_titles}>

@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import ReactCurvedText from "react-curved-text";
 import { motion as m } from "framer-motion";
-import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logo from "../assets/ratskinlogo.avif";
@@ -14,8 +13,9 @@ import family from "../assets/band-pics/family.jpeg";
 import thumbnail from "../assets/band-pics/thumbnail.avif";
 
 import angel_rat from "../assets/rat-pngs/rat-angel.avif";
-import devil_rat from "../assets/rat-pngs/rat-devil.avif"
-import rat_frog from "../assets/rat-pngs/rat-and-frog.avif"
+import devil_rat from "../assets/rat-pngs/rat-devil.avif";
+import btn_img from "../assets/button-img.avif";
+import btn_img_2 from "../assets/button-img-2.avif";
 
 export default function Home() {
 
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
           <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
             target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
-            → PRESAVE OUR EP!!! ←
+            → PRESAVE OUR EP ←
             <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
           </a>
 
@@ -103,7 +103,7 @@ export default function Home() {
           <iframe className={styles.music_video_iframe} src="https://www.youtube.com/embed/z9zM4JPwsVU?si=Tz0B0WfrNsj-8cqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <div className={styles_global.center_column}>
+        {/* <div className={styles_global.center_column}>
           <div className={styles.next_show_title}>
             Where can you see us next?
           </div>
@@ -135,7 +135,7 @@ export default function Home() {
           <NavLink className={styles.next_show_link} to="/shows">
             All Upcoming Shows
           </NavLink>
-        </div>
+        </div> */}
 
         <div className={styles.contact_container} id="contact">
           <img className={styles.angel_rat} src={angel_rat} alt="angel rat" loading="lazy"></img>
@@ -147,6 +147,15 @@ export default function Home() {
             <div className={styles.contact_text}>
               theratskinfamilyband@gmail.com
             </div>
+          </div>
+          <div className={styles_global.center_column}>
+            <a href="https://substack.com/@theratskinfamilyband" target="_blank" rel="noopener noreferrer" className={styles.mailing_list}>
+              JOIN OUR MAILING LIST
+              <img className={styles.button_image} src={btn_img}>
+              </img>
+              <img className={styles.button_image_2} src={btn_img_2}>
+              </img>
+            </a>
           </div>
           <div className={styles_global.center_column}>
             <div className={styles.contact_title}>
