@@ -36,7 +36,24 @@
   margin-bottom: 4rem;
 }
 
+.presave_button_image {
+  position:absolute;
+  right:-3rem;
+  top:-1.5rem;
+  width:3rem;
+  visibility: hidden;
+}
+
+.presave_button_image_2 {
+  position:absolute;
+  left:-3rem;
+  bottom:-1.5rem;
+  width:3rem;
+  visibility: hidden;
+}
+
 .presave_link {
+  position:relative;
   background-image: url("../assets/glitter-background.jpg");
   background-size: cover;
   padding:10px 20px;
@@ -54,6 +71,14 @@
 
 .presave_link:hover {
   transform: scale(1.05);
+}
+
+.presave_link:hover .presave_button_image {
+  visibility: visible;
+}
+
+.presave_link:hover .presave_button_image_2 {
+  visibility: visible;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -78,5 +103,13 @@
 @media (max-width: 768px) {
   .presave_link {
     font-size: 24px;
+  }
+
+  .presave_button_image {
+    visibility: visible;
+  }
+
+  .presave_button_image_2 {
+    visibility: visible;
   }
 }

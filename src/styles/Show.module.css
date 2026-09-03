@@ -29,7 +29,7 @@
   background-image: url('../assets/denim-background-2.avif');
   background-repeat:no-repeat;
   background-position: center;
-  background-size:contain;
+  background-size:100% 100%;
 
   display:flex;
   flex-direction:row;

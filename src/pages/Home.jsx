@@ -4,13 +4,15 @@ import styles from "../styles/Home.module.css";
 import { useState, useEffect } from "react";
 import ReactCurvedText from "react-curved-text";
 import { motion as m } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import logo from "../assets/ratskinlogo.avif";
 import collingwood from "../assets/band-pics/collingwood.jpg";
 import buddies from "../assets/band-pics/buddies.jpg";
 import family from "../assets/band-pics/family.jpeg";
 import thumbnail from "../assets/band-pics/thumbnail.avif";
+
+import presave_btn_img from "../assets/button-img-blue.avif";
+import presave_btn_img_2 from "../assets/button-img-blue-2.avif";
 
 import angel_rat from "../assets/rat-pngs/rat-angel.avif";
 import devil_rat from "../assets/rat-pngs/rat-devil.avif";
@@ -130,7 +132,10 @@ export default function Home() {
         <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
           target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
           PRESAVE OUR EP
-          <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
+          <img className={styles_global.presave_button_image} src={presave_btn_img}>
+          </img>
+          <img className={styles_global.presave_button_image_2} src={presave_btn_img_2}>
+          </img>
         </a>
 
         <div className={styles_global.center_column}>

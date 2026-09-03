@@ -5,6 +5,9 @@ import { motion as m } from "framer-motion";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import presave_btn_img from "../assets/button-img-blue.avif";
+import presave_btn_img_2 from "../assets/button-img-blue-2.avif";
+
 export default function Music() {
 
   useEffect(() => {
@@ -24,7 +27,10 @@ export default function Music() {
           <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
             target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
             PRESAVE OUR EP
-            <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
+            <img className={styles_global.presave_button_image} src={presave_btn_img}>
+            </img>
+            <img className={styles_global.presave_button_image_2} src={presave_btn_img_2}>
+            </img>
           </a>
           <div className={styles.music_titles}>
             Listen to our latest music <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/trucker?ref=release&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAacwnSz3rbjJoN61JY6U1tciv_GqdrFXP7mYiNoVv9UPZ2bYmC8xFTVlfxYGpw_aem_ZY7-hrAz5Iqab2mSU4x9Tg"
