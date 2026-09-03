@@ -37,12 +37,16 @@
 }
 
 .presave_link {
-  margin-top: 1rem;
+  background-image: url("../assets/glitter-background.jpg");
+  background-size: cover;
+  padding:10px 20px;
+  border-radius: 30px;
+  border: solid 3px #012128;
   font-size: 3rem;
   font-family: "Irish Grover", system-ui;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #EBD194;
-  -webkit-text-stroke: 2px #FF5C5A;
+  -webkit-text-stroke: 1px #012128;
   text-decoration: none;
   text-align: center;
   transition: 0.3s ease;
@@ -50,7 +54,6 @@
 
 .presave_link:hover {
   transform: scale(1.05);
-  text-decoration: underline wavy 4px #2C2D42;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -74,10 +77,6 @@
 
 @media (max-width: 768px) {
   .presave_link {
-    font-size: 32px;
-  }
-
-  .presave_link:hover {
-    font-size:32px;
+    font-size: 24px;
   }
 }

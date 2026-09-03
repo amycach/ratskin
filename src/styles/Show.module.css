@@ -26,10 +26,10 @@
 
 .show_container {
 
-  background-image: url('../assets/denim-background.avif');
+  background-image: url('../assets/denim-background-2.avif');
   background-repeat:no-repeat;
   background-position: center;
-  background-size:cover;
+  background-size:contain;
 
   display:flex;
   flex-direction:row;
@@ -72,6 +72,8 @@
 
   .poster_container {
     width:80%;
+    height: auto;
+    display: block;
   }
 
   .show_container {

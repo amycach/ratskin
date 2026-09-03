@@ -23,7 +23,7 @@ export default function Music() {
         <div className={styles_global.center_column}>
           <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
             target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
-            → PRESAVE OUR EP ←
+            PRESAVE OUR EP
             <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
           </a>
           <div className={styles.music_titles}>

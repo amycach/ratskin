@@ -27,7 +27,6 @@
     color: #EBD194;
     -webkit-text-stroke: 1px #FF5C5A;
     text-shadow: 1px 1px 1px #00495c;
-    text-decoration: underline wavy #2C2D42;
 }
 
 .header_container>a.inactive:hover {
@@ -47,11 +46,24 @@
 
 @media (max-width: 768px) {
 .header_container > a {
-    font-size: 16px;
+    font-size: 14px;
+    -webkit-text-stroke: 0px;
 }
 
 .header_container>a.inactive:hover {
-    color: #EBD194;
+    color: #a27a1b;
+}
+
+.header_container a.inactive {
+    color: #a27a1b;
+    -webkit-text-stroke: 0px;
+}
+
+.header_container a.active {
+    color: #a27a1b;
+    -webkit-text-stroke: 0px;
+    text-shadow: none;
+    text-decoration: underline wavy #2C2D42;
 }
     
 }

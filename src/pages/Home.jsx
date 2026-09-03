@@ -85,16 +85,53 @@ export default function Home() {
             <img className={styles.photo_buddies} src={buddies} alt="rats at buddies" />
             <img className={styles.logo} src={logo} alt="the ratskin family band" />
           </div>
-          <div className={styles.photo_creds}>
-            Photos taken by Rey Nemati
+          <div className={styles.photo_creds_jamie}>
+            <ReactCurvedText
+              width={isMobile ? 250 : 460}
+              height={isMobile ? 40 : 70}
+              cx={isMobile ? 130 : 200}
+              cy={isMobile ? -40 : -15}
+              rx={200}
+              ry={70}
+              startOffset={isMobile ? 100 : 30}
+              reversed={false}
+              text="Photo 1 by Jamie Lujan"
+            />
           </div>
-          <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
-            target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
-            → PRESAVE OUR EP ←
-            <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
-          </a>
+          <div className={styles.photo_creds_rey}>
+            <ReactCurvedText
+              width={isMobile ? 260 : 510}
+              height={isMobile ? 40 : 70}
+              cx={isMobile ? 150 : 200}
+              cy={isMobile ? -35 : -15}
+              rx={200}
+              ry={70}
+              startOffset={isMobile ? 80 : 30}
+              reversed={false}
+              text="Photos 2, 4 by Rey Nemati"
+            />
+          </div>
+          <div className={styles.photo_creds_chelsea}>
+            <ReactCurvedText
+              width={isMobile ? 260 : 530}
+              height={isMobile ? 40 : 60}
+              cx={isMobile ? 140 : 200}
+              cy={isMobile ? -25 : -10}
+              rx={200}
+              ry={50}
+              startOffset={isMobile ? 80 : 30}
+              reversed={false}
+              text="Photo 3 by Chelsea Collins"
+            />
+          </div>
 
         </div>
+
+        <a href="https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry"
+          target="_blank" rel="noopener noreferrer" className={styles_global.presave_link}>
+          PRESAVE OUR EP
+          <FontAwesomeIcon icon={['fas', 'arrow-pointer']} />
+        </a>
 
         <div className={styles_global.center_column}>
           <div className={styles.trucker_title}>
