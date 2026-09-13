@@ -21,7 +21,7 @@
 }
 
 .poster_container {
-  width:40%;
+  width:180px;
 }
 
 .show_container {
@@ -68,12 +68,6 @@
 
   .info_location {
     font-size: 12px;
-  }
-
-  .poster_container {
-    width:80%;
-    height: auto;
-    display: block;
   }
 
   .show_container {

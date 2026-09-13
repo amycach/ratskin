@@ -24,7 +24,11 @@ export default function Show(props) {
           Tickets + more info
         </a>
       </div>
-      <img className={styles.poster_container} src={poster} alt="Poster"></img>
+      {poster ?
+        <img className={styles.poster_container} src={poster} alt="Poster"></img>
+        :
+        <div></div>
+      }
     </div>
   );
 }
