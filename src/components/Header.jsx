@@ -31,11 +31,18 @@ export default function Header() {
         >
           Press
         </NavLink>
-        {/*<NavLink
+        <NavLink
           to="/meet-the-rats"
           className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
         >
           Meet the Rats
+        </NavLink> 
+
+      {/*   <NavLink
+          to="/fun"
+          className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
+        >
+          Fun
         </NavLink> */}
         <NavHashLink
           smooth
@@ -44,12 +51,6 @@ export default function Header() {
         >
           Contact Us
         </NavHashLink>
-        {/* <NavLink
-          to="/fun"
-          className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
-        >
-          Fun
-        </NavLink> */}
     </div>
   );
 }
