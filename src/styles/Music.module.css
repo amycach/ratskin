@@ -8,12 +8,13 @@
 }
 
 .music_grid {
-  width: 60%;
+  width: 40%;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  margin-top:3rem;
 }
 
 .music_grid>a {

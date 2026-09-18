@@ -219,10 +219,10 @@ background:none;
 }
 
 .photo_family {
-  width: 12rem;
+  width: 16rem;
   transform: rotate(-10deg);
-  left: -5rem;
-  top: 6rem;
+  left: -8rem;
+  top: 8rem;
   box-shadow: 2px 2px 5px #000000;
 }
 
@@ -367,26 +367,26 @@ background:none;
 
   .photo_grid {
     width: 10rem;
-    height: 30rem;
+    height: 28rem;
     margin-top: 0;
   }
 
   .photo_buddies {
-    width: 15rem;
+    width: 13rem;
     right: -6rem;
     top: 11rem;
   }
 
   .photo_collingwood {
     width: 15rem;
-    top: 19rem;
+    top: 17rem;
     right: -2rem;
   }
 
   .photo_family {
-    width: 8rem;
-    left: -5rem;
-    top: 6rem;
+    width: 9rem;
+    left: -6rem;
+    top: 5rem;
   }
 
   .photo_thumbnail {
