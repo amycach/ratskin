@@ -87,8 +87,8 @@ export default function Home() {
           </div>
           <div className={styles.photo_grid}>
             <img className={styles.photo_collingwood} src={collingwood} alt="rats at collingwood pride" />
-            <img className={styles.photo_buddies} src={buddies} alt="rats at buddies" />
             <img className={styles.photo_thumbnail} src={thumbnail} alt="rats in music video thumbnail" />
+            <img className={styles.photo_buddies} src={buddies} alt="rats at buddies" />
             <img className={styles.photo_family} src={laughter} alt="rats in a family portrait" /> 
             <img className={styles.logo} src={logo} alt="the ratskin family band" />
           </div>
