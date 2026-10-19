@@ -7,7 +7,9 @@ import ratthew from "../assets/rat-pngs/rat-ratthew.avif";
 import ratalie from "../assets/rat-pngs/rat-ratalie.avif";
 import ratricia from "../assets/rat-pngs/rat-ratricia.avif"
 
-import posterEPRelease from "../assets/posters/ep-poster.png"
+import valuesPoster from "../assets/posters/values-poster.png"
+import doomPoster from "../assets/posters/cuntry-doom-poster.png"
+import halloweenPoster from "../assets/posters/halloween-poster.png"
 import { motion as m } from "framer-motion";
 import { useEffect } from "react";
 
@@ -28,13 +30,16 @@ export default function Shows() {
       <div className={styles.shows_container}>
         
         <div className={styles.show_container_relative}>
-          <img className={styles.ratalie}src={ratalie} alt="ratalie"></img>
-          
-          <Show showName={"Back to the Cuntry EP Release Party"} showDate={"SEPTEMBER 25"} location={"Drom Taberna"} city={"Toronto, ON"} poster={posterEPRelease} link={"https://www.eventbrite.ca/e/the-ratskin-family-band-back-to-the-cuntry-ep-release-party-at-drom-tickets-1999938817841"}></Show>
+          <img className={styles.ratalie}src={ratalie} alt="ratalie"></img>    
+          <Show showName={"Ratskin Family Values- Halloween Edition"} showDate={"OCTOBER 24"} location={"Drom Taberna"} city={"Toronto, ON"} poster={valuesPoster} link={"https://www.eventbrite.ca/e/ratskin-family-values-halloween-edition-tickets-2003223901615"}></Show>
         </div>
         <div className={styles.show_container_relative}>
           <img className={styles.ratthew}src={ratthew} alt="ratalie"></img>
-          <Show showName={"The Ratskin Family Band with Mother Of & Ensh"} showDate={"NOVEMBER 7"} location={"The Pilot"} city={"Toronto, ON"} poster={""} link={"https://www.eventbrite.ca/e/the-ratskin-family-band-with-mother-of-ensh-tickets-1999028367660"}></Show>
+          <Show showName={"Halloween Double Dip of Doom"} showDate={"OCTOBER 31"} location={"Honey Dip"} city={"London, ON"} poster={halloweenPoster} link={"https://honey-dip.bloomtickets.ca/event/3919"}></Show>
+        </div>
+        <div className={styles.show_container_relative}>
+          <img className={styles.ratricia}src={ratricia} alt="ratalie"></img>
+          <Show showName={"Cuntry Doom"} showDate={"NOVEMBER 7"} location={"The Pilot"} city={"Toronto, ON"} poster={doomPoster} link={"https://www.eventbrite.ca/e/the-ratskin-family-band-with-mother-of-ensh-tickets-1999028367660"}></Show>
         </div>
         {/*
         <div className={styles.show_container_relative}>

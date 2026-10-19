@@ -19,7 +19,7 @@
 
 .music_grid>a {
   padding: 10px 20px 10px 20px;
-  font-family: "Life Savers", serif;
+  font-family: "Bellota Text", sans-serif;
   font-weight: 500;
   text-decoration: none;
   background: #2C2D42;
@@ -73,9 +73,9 @@
 }
 
 .music_video_titles {
-  color: #2C2D42;
-  font-size: 2rem;
-  font-family: "Irish Grover", system-ui;
+  font-size: 20px;
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 500;
 }
 
 .videos_container {

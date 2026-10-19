@@ -30,7 +30,7 @@ export default function Music() {
       <div className={styles_global.page_container_inner}>
         <div className={styles_global.center_column}>
           <div onClick={goToAlbum} className={styles_global.album_container}>
-            <div className={styles_global.presave_link}>
+            <div className={styles_global.titles}>
               LISTEN TO OUR NEW MUSIC
               <img className={styles_global.presave_button_image} src={presave_btn_img}>
               </img>
@@ -88,8 +88,8 @@ export default function Music() {
           </div>
         </div>
         <div className={styles_global.center_column}>
-          <div className={styles.music_titles}>
-            Music Videos
+          <div className={styles_global.titles}>
+            MUSIC VIDEOS
           </div>
           <div className={styles.videos_container}>
             <div>

@@ -1,48 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
 .descriptions {
-  width:300px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap:1rem;
+  gap: 1rem;
 }
 
 .meet_rats_container {
   display: flex;
-  flex-direction:column;
-  align-items: center;
+  flex-wrap:wrap;
+  gap: 2rem;
+  align-items: start;
   justify-content: center;
-  gap:5rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
+  width:60%;
 }
 
 .names {
   font-family: "Rye", serif;
   font-size: 32px;
   text-align: center;
-  width:300px;
-  color: #2C2D42;
+  width: 300px;
 }
 
 .photos {
-  width:300px;
+  width: 300px;
 }
 
 .quote_citation {
-  margin-top:0.75rem;
+  margin-top: 0.75rem;
   font-size: 0.75rem;
 }
 
 .quote_container {
   background-image: url('../assets/denim-background-2.avif');
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-size:100% 100%;
-  width:200px;
-  padding:20px;
+  background-size: 100% 100%;
+  width: 200px;
+  padding: 20px;
   color: #EBD194;
   font-size: 1rem;
   font-family: "Life Savers", serif;
@@ -63,12 +64,23 @@
   color: #2C2D42;
 }
 
-.title{
+.title {
   text-align: center;
-  margin-top:4rem;
+  margin-top: 4rem;
   margin-bottom: 8rem;
-  font-size: 2rem;
-  font-family: "Life Savers", serif;
-  font-weight: 600;
+  font-size: 20px;
+  font-family: "Red Hat Display", sans-serif;
   color: #2C2D42;
+}
+
+@media (max-width: 1200px) {
+  .meet_rats_container {
+    width:80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .meet_rats_container {
+    width:90%
+  }
 }

@@ -1,11 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
+.band_text {
+    position: absolute;
+    top:-3rem;
+    right:-8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    font-family: 'Henny Penny';
+    font-size: 1.25rem;
+    color: #2C2D42;
+}
+
+
+.band_text_2 {
+    margin-top: -7rem;
+    margin-left:-1rem;
+}
+
 .header_container {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    width:70%;
+    flex-wrap:wrap;
 }
 
 .header_container>a {
@@ -46,16 +69,36 @@
     cursor: pointer;
 }
 
+.header_logo {
+    position:relative;
+}
 
-@media (max-width: 1200px) {}
+.header_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+}
 
+.logo {
+    width: 18rem;
+}
+
+@media (max-width: 1200px) { 
+    .header_container {
+        justify-content: center;
+        gap:2rem;
+    }
+}
 
 @media (max-width: 768px) {
 
+    .band_text {
+        font-size:0.75rem;
+        right:-9rem;
+    }
     .header_container {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap:10px;
+        gap: 10px;
     }
 
     .header_container>a {
@@ -78,6 +121,10 @@
         -webkit-text-stroke: 0px;
         text-shadow: none;
         background-size: 15px 15px, 15px 15px;
+    }
+
+    .logo {
+        width:12rem;
     }
 
 }

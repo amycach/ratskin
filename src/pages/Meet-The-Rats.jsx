@@ -26,12 +26,6 @@ export default function MeetTheRats() {
       exit={{ opacity: 0 }}
       className={styles_global.page_container}
     >
-      <div className={styles.title}>
-        Introducing... <br></br>
-        In no particular order... <br></br>
-        Except for alphabetical... <br></br>
-        For the most part...
-      </div>
       <div className={styles.meet_rats_container}>
         <div className={styles_global.center_column}>
           <div className={styles.names}>
@@ -47,14 +41,14 @@ export default function MeetTheRats() {
                 Banjo and mandolin player, worker of the mic, email warrior, music producer
               </div>
             </div>
-            <div className={styles.quote_container}>
+            {/* <div className={styles.quote_container}>
               <div>
-                "Hold on I gotta tune"
+                ""
               </div>
               <div className={styles.quote_citation}>
-                -Amanda Prior, 2 minutes after her last tuning break
+                -
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles_global.center_column}>
@@ -116,15 +110,7 @@ export default function MeetTheRats() {
                 Band roles:
               </div>
               <div className={styles.roles}>
-                Bass player, software developer, high notes
-              </div>
-            </div>
-            <div className={styles.quote_container}>
-              <div>
-                "Damn... Sorry what?"
-              </div>
-              <div className={styles.quote_citation}>
-                -Terrie Dikoff after catching his reflection in a window and getting distracted.
+                Bassist, high notes
               </div>
             </div>
           </div>
