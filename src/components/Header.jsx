@@ -24,26 +24,26 @@ export default function Header() {
           <div className={styles.band_text}>
             <div>
               <ReactCurvedText
-                width={isMobile ? 300 : 220}
-                height={isMobile ? 60 : 150}
-                cx={isMobile ? 140 : 50}
+                width={220}
+                height={150}
+                cx={50}
                 cy={180}
                 rx={150}
                 ry={150}
-                startOffset={isMobile ? 300 : 200}
+                startOffset={200}
                 reversed={true}
                 text="The World's First and only"
               />
             </div>
             <div className={styles.band_text_2}>
               <ReactCurvedText
-                width={isMobile ? 300 : 170}
+                width={170}
                 height={140}
-                cx={isMobile ? 150 : 20}
+                cx={20}
                 cy={165}
                 rx={140}
                 ry={150}
-                startOffset={isMobile ? 230 : 220}
+                startOffset={220}
                 reversed={true}
                 text="Drag Country Band"
               />
@@ -59,10 +59,10 @@ export default function Header() {
           Home
         </NavLink>
         <NavLink
-          to="/bio"
+          to="/about"
           className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
         >
-          Bio
+          About the Rats
         </NavLink>
         <NavLink
           to="/music"
@@ -81,12 +81,6 @@ export default function Header() {
           className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
         >
           Press
-        </NavLink>
-        <NavLink
-          to="/meet-the-rats"
-          className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
-        >
-          Meet the Rats
         </NavLink>
         <NavHashLink
           smooth

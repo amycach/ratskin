@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+.bio_container {
+  width:70%;
+  margin-top:4rem;
+  margin-bottom:4rem;
+  display:flex;
+  flex-direction:row;
+  align-items: start;
+  justify-content: center;
+  gap:2rem;
+  font-size:18px;
+  font-family: "Bellota Text", sans-serif;
+}
+
+.bio_text {
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+}
 
 .descriptions {
   width: 300px;
@@ -8,6 +25,10 @@
   justify-content: center;
   text-align: center;
   gap: 1rem;
+}
+
+.family_photo {
+  width:300px;
 }
 
 .meet_rats_container {
@@ -79,7 +100,19 @@
   }
 }
 
+
 @media (max-width: 768px) {
+  .bio_container {
+    font-size:12px;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .family_photo {
+    width:200px;
+  }
+
   .meet_rats_container {
     width:90%
   }

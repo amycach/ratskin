@@ -28,6 +28,17 @@
   width: 40%;
 }
 
+.shows_container_past {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  gap: 1rem;
+  width: 40%;
+  font-family: "Bellota Text", sans-serif;
+  font-size:16px;
+}
+
 .show_container_relative {
   position: relative;
 }
@@ -36,6 +47,11 @@
 
   .shows_container {
     width: 80%;
+  }
+
+  .shows_container_past {
+    width: 80%;
+    font-size:12px;
   }
 
   .ratalie {

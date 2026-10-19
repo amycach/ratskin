@@ -206,14 +206,12 @@ background:none;
   width: 20rem;
   right: -8rem;
   top: 12rem;
-  box-shadow: 2px 2px 5px #000000;
 }
 
 .photo_collingwood {
   width: 22rem;
   transform: rotate(8deg);
   top: 21rem;
-  box-shadow: 2px 2px 5px #000000;
 }
 
 .photo_family {
@@ -221,7 +219,6 @@ background:none;
   transform: rotate(-10deg);
   left: -8rem;
   top: 8rem;
-  box-shadow: 2px 2px 5px #000000;
 }
 
 .photo_thumbnail {
@@ -229,15 +226,7 @@ background:none;
   transform: rotate(10deg);
   top: 2rem;
   right: -7rem;
-  box-shadow: 2px 2px 5px #000000;
 
-}
-
-.trucker_title {
-  font-family: "Devonshire", cursive;
-  font-size: 3rem;
-  color: #d8c022;
-  text-shadow: 2px 3px 1px black;
 }
 
 @media (max-width: 1200px) {
@@ -334,9 +323,5 @@ background:none;
 
   .tour_title {
     font-size: 25px;
-  }
-
-  .trucker_title {
-    font-size: 32px;
   }
 }
