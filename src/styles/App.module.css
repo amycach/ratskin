@@ -35,6 +35,12 @@
   justify-content: center;
 }
 
+.epk_container {
+  width:70%;
+  height:80vh;
+  margin-bottom:4rem;
+}
+
 .page_container {
   width: 100%;
   height: max-content;

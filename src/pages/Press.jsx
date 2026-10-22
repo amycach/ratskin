@@ -1,8 +1,6 @@
 import styles_global from "../styles/App.module.css";
 import styles from "../styles/Press.module.css"
 
-import epk from "../assets/doodles/epk.avif"
-
 import { motion as m } from "framer-motion";
 import { useEffect } from "react";
 
@@ -21,8 +19,6 @@ export default function Press() {
       className={styles_global.page_container}
     >
       <div className={styles.press_container}>
-        {/* <img className={styles.epk} src={epk} alt="click here to see our electronic press kit"></img>
-       */}
         {/* <div>
           <div className={styles_global.titles}>
             ACCOLADES

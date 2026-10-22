@@ -74,6 +74,12 @@ export default function Header() {
         >
           Press
         </NavLink>
+        <NavLink
+          to="/epk"
+          className={({ isActive }) => (isActive ? styles.active : styles.inactive)}
+        >
+          EPK
+        </NavLink>
         <NavHashLink
           smooth
           to="/#contact"

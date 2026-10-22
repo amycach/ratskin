@@ -1,14 +1,3 @@
-.epk {
-  position: absolute;
-  left: 5rem;
-  top: -5rem;
-  transform: rotate(8deg);
-  transition: 0.3s ease;
-}
-
-.epk:hover {
-  transform: scale(1.05);
-}
 
 .press_container {
   position: relative;
@@ -47,16 +36,6 @@
 }
 
 @media (max-width: 768px) {
-
-  .epk {
-    position: relative;
-    top: auto;
-    left: auto;
-  }
-
-  .epk:hover {
-    transform: none;
-  }
 
   .press_links {
     font-size: 12px;
