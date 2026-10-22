@@ -15,8 +15,13 @@ import { useEffect } from "react";
 
 export default function Shows() {
 
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+     const element = document.getElementById('showsContainer');
+     element.scrollIntoView();
   }, []);
 
   return (
@@ -27,7 +32,7 @@ export default function Shows() {
       exit={{ opacity: 0 }}
       className={styles_global.page_container}
     >
-      <div className={styles.shows_container}>
+      <div className={styles.shows_container} id="showsContainer">
         <div className={styles.show_container_relative}>
           <img className={styles.ratalie}src={ratalie} alt="ratalie"></img>    
           <Show showName={"Ratskin Family Values- Halloween Edition"} showDate={"OCTOBER 24"} location={"Drom Taberna"} city={"Toronto, ON"} poster={valuesPoster} link={"https://www.eventbrite.ca/e/ratskin-family-values-halloween-edition-tickets-2003223901615"}></Show>
