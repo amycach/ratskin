@@ -41,7 +41,7 @@ export default function About() {
           <div>
             In this band you will find familiar faces from Toronto’s
             drag and music scenes: Amanda Prior (banjo/mando), Kitty Creature (fiddle),
-            Terrie Dickoff (bass), Zephline (acoustic guitar), Pinny Merle (pedal steel/electric
+            Terrie Dikoff (bass), Zephline (acoustic guitar), Pinny Merle (pedal steel/electric
             guitar/dobro), and Tago Mago (percussion).
           </div>
           <div>

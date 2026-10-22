@@ -181,6 +181,11 @@
   left:3rem;
   bottom:-2rem;
   width:80px;
+  transition: transform 0.3s ease;
+}
+
+.photo_creds_reveal:hover {
+  transform: scale(1.05)
 }
 
 .photo_grid {
