@@ -27,7 +27,7 @@ export default function Music() {
       exit={{ opacity: 0 }}
       className={styles_global.page_container}
     >
-      <div className={styles_global.page_container_inner}>
+      <div className={styles.music_container}>
         <div className={styles_global.center_column}>
           <div className={styles_global.center_column}>
             <div onClick={goToAlbum} className={styles_global.album_container}>
