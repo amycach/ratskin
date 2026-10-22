@@ -14,18 +14,18 @@ import thumbnail from "../assets/band-pics/thumbnail.avif";
 import buttons from "../assets/band-pics/buttons.avif";
 
 import ep from "../assets/band-pics/album-cover-resized.avif"
-import presave_btn_img from "../assets/button-img-blue.avif";
-import presave_btn_img_2 from "../assets/button-img-blue-2.avif";
-import horse from "../assets/horse.avif";
-import horse2 from "../assets/horse2.avif";
-import camera from "../assets/camera.avif";
+import presave_btn_img from "../assets/doodles/button-img-blue.avif";
+import presave_btn_img_2 from "../assets/doodles/button-img-blue-2.avif";
+import horse from "../assets/doodles/horse.avif";
+import horse2 from "../assets/doodles/horse2.avif";
+import camera from "../assets/doodles/camera.avif";
 
 import nextShowPoster from "../assets/posters/values-poster.png"
 
 import angel_rat from "../assets/rat-pngs/rat-angel.avif";
 import devil_rat from "../assets/rat-pngs/rat-devil.avif";
-import btn_img from "../assets/button-img.avif";
-import btn_img_2 from "../assets/button-img-2.avif";
+import btn_img from "../assets/doodles/button-img.avif";
+import btn_img_2 from "../assets/doodles/button-img-2.avif";
 
 export default function Home() {
 

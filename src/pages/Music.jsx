@@ -6,8 +6,8 @@ import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import ep from "../assets/band-pics/album-cover-resized.avif"
-import presave_btn_img from "../assets/button-img-blue.avif";
-import presave_btn_img_2 from "../assets/button-img-blue-2.avif";
+import presave_btn_img from "../assets/doodles/button-img-blue.avif";
+import presave_btn_img_2 from "../assets/doodles/button-img-blue-2.avif";
 
 export default function Music() {
 

@@ -54,7 +54,7 @@
     color: #EBD194;
     -webkit-text-stroke: 1px #FF5C5A;
     text-shadow: 1px 1px 1px #00495c;
-    background-image: url("../assets/horseshoe.avif"), url("../assets/heart.avif");
+    background-image: url("../assets/doodles/horseshoe.avif"), url("../assets/doodles/heart.avif");
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
     background-size: 25px 25px, 25px 25px;
