@@ -3,7 +3,7 @@
   margin-top:4rem;
   margin-bottom:4rem;
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   align-items: start;
   justify-content: center;
   gap:2rem;
@@ -28,7 +28,7 @@
 }
 
 .family_photo {
-  width:300px;
+  width:100%;
 }
 
 .meet_rats_container {
@@ -109,11 +109,20 @@
     margin-top: 3rem;
   }
 
-  .family_photo {
-    width:200px;
-  }
-
   .meet_rats_container {
     width:90%
+  }
+
+  .names {
+    font-size: 16px;
+  }
+
+  .roles {
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .roles_title {
+    font-size: 12px;
   }
 }

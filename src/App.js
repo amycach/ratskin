@@ -7,7 +7,6 @@ import About from "./pages/About";
 import Shows from "./pages/Shows";
 import Music from "./pages/Music";
 import Press from "./pages/Press";
-import Fun from "./pages/Fun"
 import styles_global from "./styles/App.module.css";
 
 import { AnimatePresence } from "framer-motion";

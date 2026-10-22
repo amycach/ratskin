@@ -2,18 +2,23 @@ import styles_global from "../styles/App.module.css";
 import styles from "../styles/Home.module.css";
 
 import { NavLink } from 'react-router-dom';
-import { useState, useEffect } from "react";
-import ReactCurvedText from "react-curved-text";
+import { useState } from "react";
 import { motion as m } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
-import collingwood from "../assets/band-pics/collingwood.jpg";
+import family from "../assets/band-pics/family.jpeg";
 import buddies from "../assets/band-pics/buddies.jpg";
-import laughter from "../assets/band-pics/laughter.jpg";
+import laughter from "../assets/band-pics/laughter.avif";
 import thumbnail from "../assets/band-pics/thumbnail.avif";
+import buttons from "../assets/band-pics/buttons.avif";
 
 import ep from "../assets/band-pics/album-cover-resized.avif"
 import presave_btn_img from "../assets/button-img-blue.avif";
 import presave_btn_img_2 from "../assets/button-img-blue-2.avif";
+import horse from "../assets/horse.avif";
+import horse2 from "../assets/horse2.avif";
+import camera from "../assets/camera.avif";
 
 import nextShowPoster from "../assets/posters/values-poster.png"
 
@@ -24,25 +29,11 @@ import btn_img_2 from "../assets/button-img-2.avif";
 
 export default function Home() {
 
-  const [isMobile, setIsMobile] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.innerWidth < 768;
-    }
-    return false;
-  });
+  const [credsVisible, setCredsVisible] = useState(false);
 
-  useEffect(() => {
-    // Handler to check the screen width
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Attach listener
-    window.addEventListener('resize', handleResize);
-
-    // Clean up listener on component unmount
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const handleClick = () => {
+    setCredsVisible(!credsVisible);
+  };
 
   const goToAlbum = () => {
     window.open("https://distrokid.com/hyperfollow/theratskinfamilyband/back-to-the-cuntry", "_blank", "noopener,noreferrer");
@@ -63,69 +54,72 @@ export default function Home() {
       >
         <div className={styles_global.center_column}>
           <div className={styles.photo_grid}>
-            <img className={styles.photo_collingwood} src={collingwood} alt="rats at collingwood pride" />
-            <img className={styles.photo_thumbnail} src={thumbnail} alt="rats in music video thumbnail" />
-            <img className={styles.photo_buddies} src={buddies} alt="rats at buddies" />
-            <img className={styles.photo_family} src={laughter} alt="rats in a family portrait" /> 
+            <img onClick={handleClick} className={styles.photo_creds_reveal} src={camera} alt="camera icon"></img>
+            <div className={styles.photo_buttons_container}>
+              <img className={styles.gallery_photo} src={buttons} alt="rats with buttons" />
+              <div className={credsVisible ? styles.photo_creds_visible : styles.photo_creds_hidden}>
+                <FontAwesomeIcon icon={faCamera} />
+                Rey Nemati
+              </div>
+            </div>
+            <div className={styles.photo_thumbnail_container}>
+              <img className={styles.gallery_photo} src={thumbnail} alt="rats in music video thumbnail" />
+              <div className={credsVisible ? styles.photo_creds_visible : styles.photo_creds_hidden}>
+                <FontAwesomeIcon icon={faCamera} />
+                Jamie Lujan
+              </div>
+            </div>
+            <div className={styles.photo_laughter_container}>
+              <img className={styles.gallery_photo} src={laughter} alt="rats laughing" />
+              <div className={credsVisible?styles.photo_creds_visible:styles.photo_creds_hidden}>
+                <FontAwesomeIcon icon={faCamera} />
+                Rey Nemati
+              </div>
+            </div>
+            <div className={styles.photo_buddies_container}>
+              <img className={styles.gallery_photo} src={buddies} alt="rats at buddies" />
+              <div className={credsVisible?styles.photo_creds_visible:styles.photo_creds_hidden}>
+                <FontAwesomeIcon icon={faCamera} />
+                Chelsea Collins
+              </div>
+            </div>
+            <div className={styles.photo_family_container}>
+              <img className={styles.gallery_photo} src={family} alt="rats SERIOUS family portrait" />
+              <div className={credsVisible?styles.photo_creds_visible:styles.photo_creds_hidden}>
+                <FontAwesomeIcon icon={faCamera} />
+                Rey Nemati
+              </div>
+            </div>
           </div>
-          <div className={styles.photo_creds_jamie}>
-            <ReactCurvedText
-              width={isMobile ? 250 : 460}
-              height={isMobile ? 40 : 70}
-              cx={isMobile ? 130 : 200}
-              cy={isMobile ? -40 : -15}
-              rx={200}
-              ry={70}
-              startOffset={isMobile ? 100 : 30}
-              reversed={false}
-              text="Photo 1 by Jamie Lujan"
-            />
+        </div>
+        <div className={styles_global.center_column}>
+          <img src={horse} alt="horse doodle"></img>
+          <div className={styles.short_bio}>
+            The Ratskin Family Band is the world's first and only all drag country band. Formed in April 2024, the DIY "yallternative" group blends high-energy live drag performance with classic country standards, reimagined pop hits, and original queer protest and roots music like their debut single “All You Fascists (Bound to Lose)”. At most drag shows, performers are lip syncing for their lives. But the Ratskin Family Band does not put on your typical drag show. When the self-proclaimed "first and only drag country band in the world" hit the stage, everything is performed live.
           </div>
-          <div className={styles.photo_creds_rey}>
-            <ReactCurvedText
-              width={isMobile ? 260 : 510}
-              height={isMobile ? 40 : 70}
-              cx={isMobile ? 150 : 200}
-              cy={isMobile ? -35 : -15}
-              rx={200}
-              ry={70}
-              startOffset={isMobile ? 80 : 30}
-              reversed={false}
-              text="Photos 2, 4 by Rey Nemati"
-            />
-          </div>
-          <div className={styles.photo_creds_chelsea}>
-            <ReactCurvedText
-              width={isMobile ? 260 : 530}
-              height={isMobile ? 40 : 60}
-              cx={isMobile ? 140 : 200}
-              cy={isMobile ? -25 : -10}
-              rx={200}
-              ry={50}
-              startOffset={isMobile ? 80 : 30}
-              reversed={false}
-              text="Photo 3 by Chelsea Collins"
-            />
-          </div>
-
+          <img src={horse2} alt="horse doodle"></img>
         </div>
 
-        <div onClick={goToAlbum} className={styles_global.album_container}>
-          <div className={styles_global.titles}>
-            LISTEN TO OUR NEW MUSIC
-            <img className={styles_global.presave_button_image} src={presave_btn_img}>
-            </img>
-            <img className={styles_global.presave_button_image_2} src={presave_btn_img_2}>
-            </img>
+        <div className={styles_global.center_column}>
+          <div onClick={goToAlbum} className={styles_global.album_container}>
+            <div className={styles_global.titles}>
+              LISTEN TO OUR NEW MUSIC
+              <img className={styles_global.presave_button_image} src={presave_btn_img} alt="sparkles and music notes">
+              </img>
+              <img className={styles_global.presave_button_image_2} src={presave_btn_img_2} alt="sparkles and music notes">
+              </img>
+            </div>
+            <img className={styles_global.album_cover} src={ep} alt="Back to the Cuntry ep cover"></img>
           </div>
-          <img className={styles_global.album_cover} src={ep} alt="Back to the Cuntry ep cover"></img>      
+          <iframe title="spotify embed" className={styles_global.spotify_embed} data-testid="embed-iframe" src="https://open.spotify.com/embed/artist/10pwp9ZKY5oNFhit622V4E?utm_source=generator&theme=0&si=24d3f8dc117c462a" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
+
 
         <div className={styles_global.center_column}>
           <div className={styles_global.titles}>
             WHERE TO SEE US NEXT
           </div>
-          <img onClick={goToShow} src={nextShowPoster} className={styles.next_show_poster}></img>
+          <img onClick={goToShow} src={nextShowPoster} className={styles.next_show_poster} alt="show poster"></img>
           <NavLink className={styles.next_show_link} to="/shows">
             All Upcoming Shows
           </NavLink>
@@ -152,9 +146,9 @@ export default function Home() {
           <div className={styles_global.center_column}>
             <a href="https://substack.com/@theratskinfamilyband" target="_blank" rel="noopener noreferrer" className={styles.mailing_list}>
               JOIN OUR MAILING LIST
-              <img className={styles.button_image} src={btn_img}>
+              <img className={styles.button_image} src={btn_img} alt="button doodle">
               </img>
-              <img className={styles.button_image_2} src={btn_img_2}>
+              <img className={styles.button_image_2} src={btn_img_2} alt="button doodle">
               </img>
             </a>
           </div>

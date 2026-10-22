@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: center;
     font-family: "Irish Grover", system-ui;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
     transition: 0.1s;
@@ -86,6 +86,7 @@
 
 @media (max-width: 1200px) { 
     .header_container {
+        width:80%;
         justify-content: center;
         gap:2rem;
     }
@@ -98,6 +99,7 @@
         right:-9rem;
     }
     .header_container {
+        width: 90%;
         gap: 10px;
     }
 
@@ -108,16 +110,16 @@
     }
 
     .header_container>a.inactive:hover {
-        color: #a27a1b;
+        color: #FF5C5A;
     }
 
     .header_container a.inactive {
-        color: #a27a1b;
+        color: #FF5C5A;
         -webkit-text-stroke: 0px;
     }
 
     .header_container a.active {
-        color: #a27a1b;
+        color: #FF5C5A;
         -webkit-text-stroke: 0px;
         text-shadow: none;
         background-size: 15px 15px, 15px 15px;

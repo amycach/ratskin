@@ -71,6 +71,7 @@
   }
 
   .show_container {
+    background-image: url('../assets/denim-background.avif');
   flex-direction:column;
   justify-content: center;
   align-items: center;
@@ -79,7 +80,7 @@
 }
 
   .show_title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .ticket_link {

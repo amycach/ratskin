@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
-import { useState, useEffect } from "react";
 import ReactCurvedText from "react-curved-text";
 import logo from "../assets/ratskinlogopink.avif";
 import "../styles/App.module.css";
@@ -8,13 +7,6 @@ import styles_global from "../styles/App.module.css";
 import styles from "../styles/Header.module.css";
 
 export default function Header() {
-
-  const [isMobile, setIsMobile] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.innerWidth < 768;
-    }
-    return false;
-  });
 
   return (
     <div className={styles_global.center_column}>

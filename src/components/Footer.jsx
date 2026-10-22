@@ -1,4 +1,3 @@
-import styles_global from "../styles/App.module.css";
 import styles from "../styles/Footer.module.css";
 
 export default function Footer() {

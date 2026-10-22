@@ -16,7 +16,7 @@ export default function CardSet(props) {
       <div className={styles.cards_container}>
         {
           images.map((image) =>
-            <img src={image} className={styles.card}></img>
+            <img src={image} className={styles.card} alt=""></img>
           )
         }
       </div>

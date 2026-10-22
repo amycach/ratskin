@@ -8,35 +8,35 @@
 
 
 .button_image {
-  position:absolute;
-  right:-3rem;
-  top:-2rem;
-  width:3rem;
+  position: absolute;
+  right: -3rem;
+  top: -2rem;
+  width: 3rem;
   visibility: hidden;
 }
 
 .button_image_2 {
-  position:absolute;
-  left:-3rem;
-  bottom:-2rem;
-  width:3rem;
+  position: absolute;
+  left: -3rem;
+  bottom: -2rem;
+  width: 3rem;
   visibility: hidden;
 }
 
-.contact_text> a {
+.contact_text>a {
   color: #EBD194;
   transition: 0.3s ease;
 }
 
-.contact_text> a:hover {
+.contact_text>a:hover {
   text-shadow: 4px 4px 4px #080926;
 }
 
-.contact_text> a:active {
+.contact_text>a:active {
   color: #EBD194;
 }
 
-.contact_text> a:visited {
+.contact_text>a:visited {
   color: #EBD194;
 }
 
@@ -69,6 +69,12 @@
   color: #EBD194;
 }
 
+.creds_container {
+  display:flex;
+  justify-content: space-between;
+  width:90%
+}
+
 .devil_rat {
   position: absolute;
   width: 12rem;
@@ -94,7 +100,7 @@
 }
 
 .mailing_list {
-  position:relative;
+  position: relative;
   border: 3px solid #FFFFFF;
   border-radius: 50px;
   padding: 1rem;
@@ -107,7 +113,8 @@
 }
 
 .mailing_list:hover {
-  transform: scale(1.05); /* Grows to 120% size */
+  transform: scale(1.05);
+  /* Grows to 120% size */
 }
 
 .mailing_list:hover .button_image {
@@ -132,21 +139,14 @@
 }
 
 .next_show_poster {
-  margin-top:1rem;
-  margin-bottom:1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 20rem;
   transition: 0.3s ease;
 }
 
 .next_show_poster:hover {
   transform: scale(1.05);
-}
-
-.next_show_title {
-  font-family: "Henny Penny", system-ui;
-  font-size: 3rem;
-  font-weight: 500;
-  text-align: center;
 }
 
 .next_show_link {
@@ -166,67 +166,88 @@
   box-shadow: 2px 2px 5px #00495c;
 }
 
-.photo_creds_jamie {
-  margin-top:-4rem;
-  font-size: 0.75rem;
-  font-family: "Bellota Text", sans-serif;
-  font-weight: 600;
+.photo_creds_hidden {
+  opacity:0;
+  visibility: hidden;
 }
 
-.photo_creds_rey {
-  margin-top:-3rem;
-  font-size: 0.75rem;
-  font-family: "Bellota Text", sans-serif;
-  font-weight: 600;
-z-index: 10;
-background:none;
+.photo_creds_visible {
+  opacity:1;
+  visibility: visible;
 }
 
-.photo_creds_chelsea {
-  margin-top:-2rem;
-  font-size: 0.75rem;
-  font-family: "Bellota Text", sans-serif;
-  font-weight: 600;
-z-index: 11;
-background:none;
+.photo_creds_reveal {
+  position:absolute;
+  left:3rem;
+  bottom:-2rem;
+  width:80px;
 }
 
 .photo_grid {
   position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo_grid .gallery_photo {
+  position: relative;
+  width: 100%;
+}
+
+.photo_grid > div > div {
+  margin-top:-2rem;
+  margin-left:1rem;
+  width:max-content;
+  color:#00495c;
+  background-color: white;
+  font-size:12px;
+  font-weight: 600;
+  font-family: "Bellota Text", sans-serif;
+  position:relative;
+  z-index: 105;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.photo_buddies_container {
   width: 20rem;
-  height: 38rem;
 }
 
-.photo_grid>img {
-  position: absolute;
-
+.photo_buttons {
+  width: 100%;
 }
 
-.photo_buddies {
-  width: 20rem;
-  right: -8rem;
-  top: 12rem;
+.photo_buttons_container {
+  width: 18rem;
+  transform: rotate(-6deg);
 }
 
-.photo_collingwood {
-  width: 22rem;
+.photo_family_container {
+  width: 13rem;
   transform: rotate(8deg);
-  top: 21rem;
 }
 
-.photo_family {
+.photo_laughter_container {
   width: 16rem;
   transform: rotate(-10deg);
-  left: -8rem;
-  top: 8rem;
 }
 
-.photo_thumbnail {
+.photo_thumbnail_container {
   width: 22rem;
   transform: rotate(10deg);
-  top: 2rem;
-  right: -7rem;
 
+}
+
+.short_bio {
+  width:70%;
+  text-align: center;
+  font-size:18px;
+  font-family: "Bellota Text", sans-serif;
+  margin-top:2rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 1200px) {
@@ -234,6 +255,11 @@ background:none;
   .logo {
     width: 20rem;
     left: -10rem;
+  }
+
+  .photo_creds_reveal {
+    left:7rem;
+    bottom:-4rem;
   }
 }
 
@@ -267,28 +293,28 @@ background:none;
 
   .music_video_iframe {
     width: 90%;
-    height:190px;
+    height: 190px;
   }
 
   .next_show_link {
     font-size: 16px;
   }
 
-  .next_show_title {
-    font-size: 25px;
+  .next_show_poster {
+    width: 70%;
+    transition: none;
   }
 
-  .photo_creds_jamie {
-    margin-top:-1rem;;
+  .next_show_poster:hover {
+    transform: none;
   }
 
-  .photo_creds_rey {
-    margin-top:-1rem;
+  .photo_creds_reveal {
+    left:-4rem;
+    bottom:3rem;
+    width:50px;
   }
 
-  .photo_creds_chelsea {
-    margin-top:-0.5rem;
-  }
 
   .photo_grid {
     width: 10rem;
@@ -296,29 +322,58 @@ background:none;
     margin-top: 0;
   }
 
-  .photo_buddies {
-    width: 13rem;
-    right: -6rem;
-    top: 11rem;
+  .photo_grid>div {
+    position: absolute;
+
   }
 
-  .photo_collingwood {
-    width: 15rem;
-    top: 17rem;
+  .photo_buddies_container {
+    width: 12rem;
+    top: 21rem;
     right: -2rem;
+    z-index: 102;
+    transform: rotate(-3deg)
   }
 
-  .photo_family {
+  .photo_buttons_container {
+    width: 11rem;
+    top: 14rem;
+    left: -5rem;
+    z-index: 103;
+    transform: rotate(5deg)
+  }
+
+  .photo_grid > div > div {
+    margin-left:2rem;
+    font-size: 8px;
+    padding:3px;
+  }
+
+  .photo_family_container {
     width: 9rem;
-    left: -6rem;
-    top: 5rem;
+    right: -4rem;
+    top: 9rem;
+    z-index: 101;
+    transform: rotate(-5deg)
   }
 
-  .photo_thumbnail {
-    width: 15rem;
-    top: 2rem;
-    right: -6rem;
+  .photo_laughter_container {
+    width: 9rem;
+    left: -5rem;
+    top: 5rem;
+    z-index: 104;
+  }
 
+  .photo_thumbnail_container {
+    width: 13rem;
+    top: 2rem;
+    right: -5rem;
+    z-index: 100;
+
+  }
+
+  .short_bio {
+    font-size: 12px;
   }
 
   .tour_title {

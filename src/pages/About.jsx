@@ -1,7 +1,7 @@
 import styles_global from "../styles/App.module.css";
 import styles from "../styles/About.module.css"
 
-import pose from "../assets/band-pics/01 Pose.png"
+import pose from "../assets/band-pics/prom.avif"
 import amanda from "../assets/solo-shots/amanda.png";
 import kitty from "../assets/solo-shots/kitty.png";
 import pinny from "../assets/solo-shots/pinny.png";
@@ -63,7 +63,7 @@ export default function About() {
             dance, and witness these crossy queers absolutely shred some twangy tunes.
           </div>
         </div>
-        <img className={styles.family_photo} src={pose} alt="ratskin family band photo"></img>
+        <img className={styles.family_photo} src={pose} alt="ratskin family band"></img>
       </div>
       <div className={styles_global.titles}>
         MEET THE RATS
@@ -73,7 +73,7 @@ export default function About() {
           <div className={styles.names}>
             Amanda Prior
           </div>
-          <img className={styles.photos} src={amanda}></img>
+          <img className={styles.photos} src={amanda} alt="Amanda Prior"></img>
           <div className={styles.descriptions}>
             <div>
               <div className={styles.roles_title}>
@@ -97,7 +97,7 @@ export default function About() {
           <div className={styles.names}>
             Kitty Creature
           </div>
-          <img className={styles.photos} src={kitty}></img>
+          <img className={styles.photos} src={kitty} alt="Kitty Creature"></img>
           <div className={styles.descriptions}>
             <div>
               <div className={styles.roles_title}>
@@ -113,7 +113,7 @@ export default function About() {
           <div className={styles.names}>
             Pinny Merle
           </div>
-          <img className={styles.photos} src={pinny}></img>
+          <img className={styles.photos} src={pinny} alt="Pinny Merle"></img>
           <div className={styles.descriptions}>
             <div>
               <div className={styles.roles_title}>
@@ -129,7 +129,7 @@ export default function About() {
           <div className={styles.names}>
             Tago Mago
           </div>
-          <img className={styles.photos} src={tago}></img>
+          <img className={styles.photos} src={tago} alt="Tago Mago"></img>
           <div className={styles.descriptions}>
             <div>
               <div className={styles.roles_title}>
@@ -145,7 +145,7 @@ export default function About() {
           <div className={styles.names}>
             Terrie Dikoff
           </div>
-          <img className={styles.photos} src={terrie}></img>
+          <img className={styles.photos} src={terrie} alt="Terrie Dikoff"></img>
           <div className={styles.descriptions}>
             <div>
               <div className={styles.roles_title}>
@@ -161,7 +161,7 @@ export default function About() {
           <div className={styles.names}>
             Zephline
           </div>
-          <img className={styles.photos} src={zeph}></img>
+          <img className={styles.photos} src={zeph} alt="Zephline"></img>
           <div className={styles.descriptions}>
             <div>
               <div className={styles.roles_title}>
@@ -177,7 +177,7 @@ export default function About() {
           <div className={styles.names}>
             Jelly
           </div>
-          <img className={styles.photos} src={jelly}></img>
+          <img className={styles.photos} src={jelly} alt="Jelly"></img>
           <div className={styles.descriptions}>
             <div className={styles.quote_container}>
               <div>
