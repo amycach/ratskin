@@ -20,7 +20,7 @@ import horse from "../assets/doodles/horse.avif";
 import horse2 from "../assets/doodles/horse2.avif";
 import camera from "../assets/doodles/camera.avif";
 
-import nextShowPoster from "../assets/posters/values-poster.png"
+import nextShowPoster from "../assets/posters/halloween-poster.png"
 
 import angel_rat from "../assets/rat-pngs/rat-angel.avif";
 import devil_rat from "../assets/rat-pngs/rat-devil.avif";
@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   const goToShow = () => {
-    window.open("https://www.eventbrite.ca/e/ratskin-family-values-halloween-edition-tickets-2003223901615", "_blank", "noopener,noreferrer");
+    window.open("https://honey-dip.bloomtickets.ca/event/3919", "_blank", "noopener,noreferrer");
   };
 
   return (

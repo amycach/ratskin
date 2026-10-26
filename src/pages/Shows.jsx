@@ -33,22 +33,22 @@ export default function Shows() {
       className={styles_global.page_container}
     >
       <div className={styles.shows_container} id="showsContainer">
+      
         <div className={styles.show_container_relative}>
-          <img className={styles.ratalie}src={ratalie} alt="ratalie"></img>    
-          <Show showName={"Ratskin Family Values- Halloween Edition"} showDate={"OCTOBER 24"} location={"Drom Taberna"} city={"Toronto, ON"} poster={valuesPoster} link={"https://www.eventbrite.ca/e/ratskin-family-values-halloween-edition-tickets-2003223901615"}></Show>
-        </div>
-        <div className={styles.show_container_relative}>
-          <img className={styles.ratthew}src={ratthew} alt="ratalie"></img>
+          <img className={styles.ratalie}src={ratalie} alt="ratalie"></img>  
           <Show showName={"Halloween Double Dip of Doom"} showDate={"OCTOBER 31"} location={"Honey Dip"} city={"London, ON"} poster={halloweenPoster} link={"https://honey-dip.bloomtickets.ca/event/3919"}></Show>
         </div>
         <div className={styles.show_container_relative}>
-          <img className={styles.ratricia}src={ratricia} alt="ratalie"></img>
+          <img className={styles.ratthew}src={ratthew} alt="ratthew"></img>
           <Show showName={"Cuntry Doom"} showDate={"NOVEMBER 7"} location={"The Pilot"} city={"Toronto, ON"} poster={doomPoster} link={"https://www.eventbrite.ca/e/the-ratskin-family-band-with-mother-of-ensh-tickets-1999028367660"}></Show>
         </div>
       </div>
       <div className={styles.shows_container_past}>
         <div className={styles_global.titles}>
           PAST SHOWS
+        </div>
+        <div>
+          October 24, 2026 | Ratskin Family Values- Halloween Edition | Drom Taberna, Toronto, ON
         </div>
         <div>
           September 25, 2026 | The Ratskin Family Band EP Release Party | Drom Taberna, Toronto, ON

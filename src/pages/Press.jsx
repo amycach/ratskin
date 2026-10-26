@@ -32,6 +32,17 @@ export default function Press() {
           </div>
           <div className={styles.press_links}>
             <div>
+              <a target="_blank" rel="noopener noreferrer" href="https://rainbowrodeomag.com/editors-picks-10-23-country-risque-zachary-james-ratskin-family-band/">
+                Editor's Picks 10/23: Country Risqué, Zachary James, Ratskin Family Band
+              </a>
+              <div>
+                Rainbow Rodeo
+              </div>
+              <div>
+                October 23, 2026
+              </div>
+            </div>
+            <div>
               <a target="_blank" rel="noopener noreferrer" href="https://thebuzzmag.ca/2026/09/the-ratskin-family-band-the-worlds-first-and-only-drag-country-band-are-having-an-ep-release-party-in-their-hometown-of-toronto-on-sept-25-2026/">
                 The Ratskin Family Band – the world’s first and only drag country band are having an EP release party in their hometown of Toronto on Sept 25, 2026
               </a>
