@@ -7,9 +7,7 @@ import ratthew from "../assets/rat-pngs/rat-ratthew.avif";
 import ratalie from "../assets/rat-pngs/rat-ratalie.avif";
 import ratricia from "../assets/rat-pngs/rat-ratricia.avif"
 
-import valuesPoster from "../assets/posters/values-poster.png"
-import doomPoster from "../assets/posters/cuntry-doom-poster.png"
-import halloweenPoster from "../assets/posters/halloween-poster.png"
+import supermarketPoster from "../assets/posters/supermarket-poster.png"
 import { motion as m } from "framer-motion";
 import { useEffect } from "react";
 
@@ -36,16 +34,18 @@ export default function Shows() {
       
         <div className={styles.show_container_relative}>
           <img className={styles.ratalie}src={ratalie} alt="ratalie"></img>  
-          <Show showName={"Halloween Double Dip of Doom"} showDate={"OCTOBER 31"} location={"Honey Dip"} city={"London, ON"} poster={halloweenPoster} link={"https://honey-dip.bloomtickets.ca/event/3919"}></Show>
-        </div>
-        <div className={styles.show_container_relative}>
-          <img className={styles.ratthew}src={ratthew} alt="ratthew"></img>
-          <Show showName={"Cuntry Doom"} showDate={"NOVEMBER 7"} location={"The Pilot"} city={"Toronto, ON"} poster={doomPoster} link={"https://www.eventbrite.ca/e/the-ratskin-family-band-with-mother-of-ensh-tickets-1999028367660"}></Show>
+          <Show showName={"The Ratskin Family Band, Trash Panda Brass & SPURS"} showDate={"NOVEMBER 26"} location={"Supermarket"} city={"Toronto, ON"} poster={supermarketPoster} link={"https://www.eventbrite.ca/e/calling-all-cowgays-the-ratskin-family-band-trash-panda-brass-spurs-tickets-2004506725576"}></Show>
         </div>
       </div>
       <div className={styles.shows_container_past}>
         <div className={styles_global.titles}>
           PAST SHOWS
+        </div>
+        <div>
+          November 7, 2026 | Cuntry Doom | The Pilot, Toronto, ON
+        </div>
+        <div>
+          October 31, 2026 | Halloween Double Dip of Doom| Honey Dip, London, ON
         </div>
         <div>
           October 24, 2026 | Ratskin Family Values- Halloween Edition | Drom Taberna, Toronto, ON
